@@ -1,8 +1,15 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2020-10-20 05:26+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsmwan3/he/>\n"
 "Language: he\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 4.3.1-dev\n"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:176
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:192
@@ -72,7 +79,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:58
 msgid "-- Please choose --"
-msgstr ""
+msgstr "-- נא לבחור --"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:66
 msgid ""
@@ -116,7 +123,7 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:34
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:34
 msgid "Collecting data..."
-msgstr ""
+msgstr "נאספים נתונים…"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:33
 msgid "Critical"
@@ -126,12 +133,12 @@ msgstr ""
 msgid "Debug"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:81
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:85
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:29
 msgid "Destination address"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:87
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:91
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:33
 msgid "Destination port"
 msgstr ""
@@ -276,7 +283,7 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_interface.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:10
 msgid "Interface"
-msgstr ""
+msgstr "מנשק"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:208
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:214
@@ -308,7 +315,7 @@ msgstr ""
 msgid "Keep ping failure interval during failure state"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:75
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:79
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policyconfig.lua:25
 msgid "Last resort"
 msgstr ""
@@ -438,7 +445,7 @@ msgid ""
 "may not share the same name as configured interfaces, policies or rules"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:61
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:65
 msgid "Members assigned"
 msgstr ""
 
@@ -559,12 +566,12 @@ msgstr ""
 msgid "Policy"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:99
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:103
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:66
 msgid "Policy assigned"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:93
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:97
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:36
 msgid "Protocol"
 msgstr ""
@@ -616,12 +623,12 @@ msgstr ""
 msgid "Seconds. Acceptable values: 1-1000000. Defaults to 600 if not set"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:69
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:73
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:22
 msgid "Source address"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:75
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:79
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:26
 msgid "Source port"
 msgstr ""
@@ -767,7 +774,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:80
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:84
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policyconfig.lua:29
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:73
 msgid "blackhole (drop)"
@@ -777,7 +784,7 @@ msgstr ""
 msgid "connected (mwan3)"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:82
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:86
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policyconfig.lua:30
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:74
 msgid "default (use main routing table)"
@@ -795,7 +802,7 @@ msgstr ""
 msgid "ifup (netifd)"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:84
+#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:88
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policyconfig.lua:28
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:72
 msgid "unreachable (reject)"
