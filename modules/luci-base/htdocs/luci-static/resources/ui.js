@@ -610,6 +610,22 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
 
 		frameEl.appendChild(E('label', { 'for': id }));
 
+		if (this.options.tooltip != null) {
+			var icon = "⚠️";
+
+			if (this.options.tooltipicon != null)
+				icon = this.options.tooltipicon;
+
+			frameEl.appendChild(
+				E('label', { 'class': 'cbi-tooltip-container' },[
+					icon,
+					E('div', { 'class': 'cbi-tooltip' },
+						this.options.tooltip
+					)
+				])
+			);
+		}
+
 		return this.bind(frameEl);
 	},
 
@@ -617,8 +633,9 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
 	bind: function(frameEl) {
 		this.node = frameEl;
 
-		this.setUpdateEvents(frameEl.lastElementChild.previousElementSibling, 'click', 'blur');
-		this.setChangeEvents(frameEl.lastElementChild.previousElementSibling, 'change');
+		var input = frameEl.querySelector('input[type="checkbox"]');
+		this.setUpdateEvents(input, 'click', 'blur');
+		this.setChangeEvents(input, 'change');
 
 		dom.bindClassInstance(frameEl, this);
 
@@ -634,7 +651,7 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
 	 * Returns `true` when the checkbox is currently checked, otherwise `false`.
 	 */
 	isChecked: function() {
-		return this.node.lastElementChild.previousElementSibling.checked;
+		return this.node.querySelector('input[type="checkbox"]').checked;
 	},
 
 	/** @override */
@@ -646,7 +663,7 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
 
 	/** @override */
 	setValue: function(value) {
-		this.node.lastElementChild.previousElementSibling.checked = (value == this.options.value_enabled);
+		this.node.querySelector('input[type="checkbox"]').checked = (value == this.options.value_enabled);
 	}
 });
 
@@ -1185,6 +1202,28 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 	},
 
 	/** @private */
+	getScrollParent: function(element) {
+		var parent = element,
+		    style = getComputedStyle(element),
+		    excludeStaticParent = (style.position === 'absolute');
+
+		if (style.position === 'fixed')
+			return document.body;
+
+		while ((parent = parent.parentElement) != null) {
+			style = getComputedStyle(parent);
+
+			if (excludeStaticParent && style.position === 'static')
+				continue;
+
+			if (/(auto|scroll)/.test(style.overflow + style.overflowY + style.overflowX))
+				return parent;
+		}
+
+		return document.body;
+	},
+
+	/** @private */
 	openDropdown: function(sb) {
 		var st = window.getComputedStyle(sb, null),
 		    ul = sb.querySelector('ul'),
@@ -1192,7 +1231,8 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 		    fl = findParent(sb, '.cbi-value-field'),
 		    sel = ul.querySelector('[selected]'),
 		    rect = sb.getBoundingClientRect(),
-		    items = Math.min(this.options.dropdown_items, li.length);
+		    items = Math.min(this.options.dropdown_items, li.length),
+		    scrollParent = this.getScrollParent(sb);
 
 		document.querySelectorAll('.cbi-dropdown[open]').forEach(function(s) {
 			s.dispatchEvent(new CustomEvent('cbi-dropdown-close', {}));
@@ -1217,29 +1257,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			ul.style.maxHeight = (vpHeight * 0.5) + 'px';
 			ul.style.WebkitOverflowScrolling = 'touch';
 
-			var getScrollParent = function(element) {
-				var parent = element,
-				    style = getComputedStyle(element),
-				    excludeStaticParent = (style.position === 'absolute');
-
-				if (style.position === 'fixed')
-					return document.body;
-
-				while ((parent = parent.parentElement) != null) {
-					style = getComputedStyle(parent);
-
-					if (excludeStaticParent && style.position === 'static')
-						continue;
-
-					if (/(auto|scroll)/.test(style.overflow + style.overflowY + style.overflowX))
-						return parent;
-				}
-
-				return document.body;
-			}
-
-			var scrollParent = getScrollParent(sb),
-			    scrollFrom = scrollParent.scrollTop,
+			var scrollFrom = scrollParent.scrollTop,
 			    scrollTo = scrollFrom + rect.top - vpHeight * 0.5;
 
 			var scrollStep = function(timestamp) {
@@ -1265,10 +1283,11 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			ul.style.top = ul.style.bottom = '';
 
 			window.requestAnimationFrame(function() {
-				var itemHeight = li[Math.max(0, li.length - 2)].getBoundingClientRect().height,
+				var containerRect = scrollParent.getBoundingClientRect(),
+				    itemHeight = li[Math.max(0, li.length - 2)].getBoundingClientRect().height,
 				    fullHeight = 0,
-				    spaceAbove = rect.top,
-				    spaceBelow = window.innerHeight - rect.height - rect.top;
+				    spaceAbove = rect.top - containerRect.top,
+				    spaceBelow = containerRect.bottom - rect.bottom;
 
 				for (var i = 0; i < (items == -1 ? li.length : items); i++)
 					fullHeight += li[i].getBoundingClientRect().height;
@@ -1344,6 +1363,8 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 
 	/** @private */
 	toggleItem: function(sb, li, force_state) {
+		var ul = li.parentNode;
+
 		if (li.hasAttribute('unselectable'))
 			return;
 
@@ -1420,7 +1441,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			this.closeDropdown(sb, true);
 		}
 
-		this.saveValues(sb, li.parentNode);
+		this.saveValues(sb, ul);
 	},
 
 	/** @private */
@@ -3000,7 +3021,7 @@ function scrubMenu(node) {
 		for (var k in node.children) {
 			var child = scrubMenu(node.children[k]);
 
-			if (child.title)
+			if (child.title && !child.firstchild_ineligible)
 				hasSatisfiedChild = hasSatisfiedChild || child.satisfied;
 		}
 	}
@@ -3597,9 +3618,11 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 				this.setActiveTabId(panes[selected], selected);
 			}
 
-			panes[selected].dispatchEvent(new CustomEvent('cbi-tab-active', {
-				detail: { tab: panes[selected].getAttribute('data-tab') }
-			}));
+			requestAnimationFrame(L.bind(function(pane) {
+				pane.dispatchEvent(new CustomEvent('cbi-tab-active', {
+					detail: { tab: pane.getAttribute('data-tab') }
+				}));
+			}, this, panes[selected]));
 
 			this.updateTabs(group);
 		},
@@ -4042,7 +4065,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 						E('button', {
 							'class': 'btn',
 							'click': UI.prototype.hideModal
-						}, [ _('Dismiss') ]), ' ',
+						}, [ _('Close') ]), ' ',
 						E('button', {
 							'class': 'cbi-button cbi-button-positive important',
 							'click': L.bind(this.apply, this, true)
