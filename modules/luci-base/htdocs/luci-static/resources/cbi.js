@@ -367,6 +367,17 @@ function cbi_validate_form(form, errmsg)
 	return true;
 }
 
+function cbi_validate_named_section_add(input)
+{
+	var button = input.parentNode.parentNode.querySelector('.cbi-button-add');
+	if (input.value !== '') {
+		button.disabled = false;
+	}
+	else {
+		button.disabled = true;
+	}
+}
+
 function cbi_validate_reset(form)
 {
 	window.setTimeout(
@@ -614,17 +625,17 @@ String.prototype.format = function()
 						var tm = 0;
 						var ts = (param || 0);
 
-						if (ts > 60) {
+						if (ts > 59) {
 							tm = Math.floor(ts / 60);
 							ts = (ts % 60);
 						}
 
-						if (tm > 60) {
+						if (tm > 59) {
 							th = Math.floor(tm / 60);
 							tm = (tm % 60);
 						}
 
-						if (th > 24) {
+						if (th > 23) {
 							td = Math.floor(th / 24);
 							th = (th % 24);
 						}
@@ -646,7 +657,11 @@ String.prototype.format = function()
 						for (i = 0; (i < units.length) && (val > mf); i++)
 							val /= mf;
 
-						subst = (i ? val.toFixed(pr) : val) + units[i];
+						if (i)
+							subst = val.toFixed(pr) + units[i] + (mf == 1024 ? 'i' : '');
+						else
+							subst = val + ' ';
+
 						pMinLength = null;
 						break;
 				}
@@ -752,7 +767,7 @@ function cbi_update_table(table, data, placeholder) {
 		});
 
 		if (Array.isArray(data)) {
-			var n = 0, rows = target.querySelectorAll('tr, .tr');
+			var n = 0, rows = target.querySelectorAll('tr, .tr'), trows = [];
 
 			data.forEach(function(row) {
 				var trow = E('tr', { 'class': 'tr' });
@@ -770,11 +785,15 @@ function cbi_update_table(table, data, placeholder) {
 
 				trow.classList.add('cbi-rowstyle-%d'.format((n++ % 2) ? 2 : 1));
 
-				if (rows[n])
-					target.replaceChild(trow, rows[n]);
-				else
-					target.appendChild(trow);
+				trows[n] = trow;
 			});
+
+			for (var i = 1; i <= n; i++) {
+				if (rows[i])
+					target.replaceChild(trows[i], rows[i]);
+				else
+					target.appendChild(trows[i]);
+			}
 
 			while (rows[++n])
 				target.removeChild(rows[n]);

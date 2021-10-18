@@ -272,18 +272,21 @@ var ValidatorFactory = baseclass.extend({
 				_('valid IPv6 prefix value (0-128)'));
 		},
 
-		cidr: function() {
-			return this.assert(this.apply('cidr4') || this.apply('cidr6'), _('valid IPv4 or IPv6 CIDR'));
+		cidr: function(negative) {
+			return this.assert(this.apply('cidr4', null, [negative]) || this.apply('cidr6', null, [negative]),
+				_('valid IPv4 or IPv6 CIDR'));
 		},
 
-		cidr4: function() {
-			var m = this.value.match(/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\/(\d{1,2})$/);
-			return this.assert(m && this.factory.parseIPv4(m[1]) && this.apply('ip4prefix', m[2]), _('valid IPv4 CIDR'));
+		cidr4: function(negative) {
+			var m = this.value.match(/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\/(-)?(\d{1,2})$/);
+			return this.assert(m && this.factory.parseIPv4(m[1]) && (negative || !m[2]) && this.apply('ip4prefix', m[3]),
+				_('valid IPv4 CIDR'));
 		},
 
-		cidr6: function() {
-			var m = this.value.match(/^([0-9a-fA-F:.]+)\/(\d{1,3})$/);
-			return this.assert(m && this.factory.parseIPv6(m[1]) && this.apply('ip6prefix', m[2]), _('valid IPv6 CIDR'));
+		cidr6: function(negative) {
+			var m = this.value.match(/^([0-9a-fA-F:.]+)\/(-)?(\d{1,3})$/);
+			return this.assert(m && this.factory.parseIPv6(m[1]) && (negative || !m[2]) && this.apply('ip6prefix', m[3]),
+				_('valid IPv6 CIDR'));
 		},
 
 		ipnet4: function() {
@@ -304,18 +307,18 @@ var ValidatorFactory = baseclass.extend({
 			return this.assert(!(!v6 || v6[0] || v6[1] || v6[2] || v6[3]), _('valid IPv6 host id'));
 		},
 
-		ipmask: function() {
-			return this.assert(this.apply('ipmask4') || this.apply('ipmask6'),
+		ipmask: function(negative) {
+			return this.assert(this.apply('ipmask4', null, [negative]) || this.apply('ipmask6', null, [negative]),
 				_('valid network in address/netmask notation'));
 		},
 
-		ipmask4: function() {
-			return this.assert(this.apply('cidr4') || this.apply('ipnet4') || this.apply('ip4addr'),
+		ipmask4: function(negative) {
+			return this.assert(this.apply('cidr4', null, [negative]) || this.apply('ipnet4') || this.apply('ip4addr'),
 				_('valid IPv4 network'));
 		},
 
-		ipmask6: function() {
-			return this.assert(this.apply('cidr6') || this.apply('ipnet6') || this.apply('ip6addr'),
+		ipmask6: function(negative) {
+			return this.assert(this.apply('cidr6', null, [negative]) || this.apply('ipnet6') || this.apply('ip6addr'),
 				_('valid IPv6 network'));
 		},
 
@@ -335,9 +338,10 @@ var ValidatorFactory = baseclass.extend({
 			return this.assert(this.apply('port'), _('valid port or port range (port1-port2)'));
 		},
 
-		macaddr: function() {
-			return this.assert(this.value.match(/^([a-fA-F0-9]{2}:){5}[a-fA-F0-9]{2}$/) != null,
-				_('valid MAC address'));
+		macaddr: function(multicast) {
+			var m = this.value.match(/^([a-fA-F0-9]{2}):([a-fA-F0-9]{2}:){4}[a-fA-F0-9]{2}$/);
+			return this.assert(m != null && !(+m[1] & 1) == !multicast,
+				multicast ? _('valid multicast MAC address') : _('valid MAC address'));
 		},
 
 		host: function(ipv4only) {
@@ -358,8 +362,8 @@ var ValidatorFactory = baseclass.extend({
 		},
 
 		network: function() {
-			return this.assert(this.apply('uciname') || this.apply('host'),
-				_('valid UCI identifier, hostname or IP address'));
+			return this.assert(this.apply('uciname') || this.apply('hostname') || this.apply('ip4addr') || this.apply('ip6addr'),
+				_('valid UCI identifier, hostname or IP address range'));
 		},
 
 		hostport: function(ipv4only) {

@@ -193,13 +193,8 @@ return view.extend({
 		s.handleAdd = function(ev) {
 			var config_name = this.uciconfig || this.map.config,
 			    section_id = uci.add(config_name, this.sectiontype),
-			    opt1, opt2;
-
-			for (var i = 0; i < this.children.length; i++)
-				if (this.children[i].option == 'src')
-					opt1 = this.children[i];
-				else if (this.children[i].option == 'dest')
-					opt2 = this.children[i];
+			    opt1 = this.getOption('src'),
+			    opt2 = this.getOption('dest');
 
 			opt1.default = 'wan';
 			opt2.default = 'lan';
@@ -236,7 +231,19 @@ return view.extend({
 		o.modalonly = false;
 		o.default = o.enabled;
 		o.editable = true;
+		o.tooltip = function(section_id) {
+			var weekdays = uci.get('firewall', section_id, 'weekdays');
+			var monthdays = uci.get('firewall', section_id, 'monthdays');
+			var start_time = uci.get('firewall', section_id, 'start_time');
+			var stop_time = uci.get('firewall', section_id, 'stop_time');
+			var start_date = uci.get('firewall', section_id, 'start_date');
+			var stop_date = uci.get('firewall', section_id, 'stop_date');
 
+			if (weekdays || monthdays || start_time || stop_time || start_date || stop_date )
+				return _('Time restritions are enabled for this rule');
+
+			return null;
+		};
 
 		o = s.taboption('advanced', form.ListValue, 'direction', _('Match device'));
 		o.modalonly = true;
@@ -291,6 +298,8 @@ return view.extend({
 		o.value('', 'any');
 		o.value('address-mask-reply');
 		o.value('address-mask-request');
+		o.value('address-unreachable'); /* ipv6 */
+		o.value('bad-header');  /* ipv6 */
 		o.value('communication-prohibited');
 		o.value('destination-unreachable');
 		o.value('echo-reply');
@@ -308,6 +317,7 @@ return view.extend({
 		o.value('network-redirect');
 		o.value('network-unknown');
 		o.value('network-unreachable');
+		o.value('no-route');  /* ipv6 */
 		o.value('packet-too-big');
 		o.value('parameter-problem');
 		o.value('port-unreachable');
@@ -328,6 +338,8 @@ return view.extend({
 		o.value('TOS-network-unreachable');
 		o.value('ttl-zero-during-reassembly');
 		o.value('ttl-zero-during-transit');
+		o.value('unknown-header-type');  /* ipv6 */
+		o.value('unknown-option');  /* ipv6 */
 		o.depends({ proto: 'icmp', '!contains': true });
 		o.depends({ proto: 'icmpv6', '!contains': true });
 
@@ -451,11 +463,11 @@ return view.extend({
 		for (var i = 1; i <= 31; i++)
 			o.value(i);
 
-		o = s.taboption('timed', form.Value, 'start_time', _('Start Time (hh.mm.ss)'));
+		o = s.taboption('timed', form.Value, 'start_time', _('Start Time (hh:mm:ss)'));
 		o.modalonly = true;
 		o.datatype = 'timehhmmss';
 
-		o = s.taboption('timed', form.Value, 'stop_time', _('Stop Time (hh.mm.ss)'));
+		o = s.taboption('timed', form.Value, 'stop_time', _('Stop Time (hh:mm:ss)'));
 		o.modalonly = true;
 		o.datatype = 'timehhmmss';
 

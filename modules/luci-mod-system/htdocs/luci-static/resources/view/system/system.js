@@ -121,6 +121,13 @@ return view.extend({
 		o = s.taboption('general', form.Value, 'hostname', _('Hostname'));
 		o.datatype = 'hostname';
 
+		/* could be used also as a default for LLDP, SNMP "system description" in the future */
+		o = s.taboption('general', form.Value, 'description', _('Description'), _('An optional, short description for this device'));
+		o.optional = true;
+
+		o = s.taboption('general', form.TextValue, 'notes', _('Notes'), _('Optional, free-form notes about this device'));
+		o.optional = true;
+
 		o = s.taboption('general', form.ListValue, 'zonename', _('Timezone'));
 		o.value('UTC');
 
@@ -194,12 +201,7 @@ return view.extend({
 			o.default     = 'lzo';
 			o.value('lzo', 'lzo');
 			o.value('lz4', 'lz4');
-			o.value('deflate', 'deflate');
-
-			o = s.taboption('zram', form.Value, 'zram_comp_streams', _('ZRam Compression Streams'), _('Number of parallel threads used for compression'));
-			o.optional    = true;
-			o.placeholder = 1;
-			o.datatype    = 'uinteger';
+			o.value('zstd', 'zstd');
 		}
 
 		/*

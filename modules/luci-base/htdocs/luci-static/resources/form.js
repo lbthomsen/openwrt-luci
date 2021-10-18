@@ -603,7 +603,7 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
 						E('p', {}, [ _('An error occurred while saving the form:') ]),
 						E('p', {}, [ E('em', { 'style': 'white-space:pre' }, [ e.message ]) ]),
 						E('div', { 'class': 'right' }, [
-							E('button', { 'class': 'btn', 'click': ui.hideModal }, [ _('Dismiss') ])
+							E('button', { 'class': 'cbi-button', 'click': ui.hideModal }, [ _('Dismiss') ])
 						])
 					]);
 				}
@@ -1862,6 +1862,9 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 		if (cval == null)
 			cval = this.default;
 
+		if (Array.isArray(cval))
+			cval = cval.join(' ');
+
 		return (cval != null) ? '%h'.format(cval) : null;
 	},
 
@@ -2032,10 +2035,32 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 	 * The configuration section ID
 	 */
 	remove: function(section_id) {
-		return this.map.data.unset(
-			this.uciconfig || this.section.uciconfig || this.map.config,
-			this.ucisection || section_id,
-			this.ucioption || this.option);
+		var this_cfg = this.uciconfig || this.section.uciconfig || this.map.config,
+		    this_sid = this.ucisection || section_id,
+		    this_opt = this.ucioption || this.option;
+
+		for (var i = 0; i < this.section.children.length; i++) {
+			var sibling = this.section.children[i];
+
+			if (sibling === this || sibling.ucioption == null)
+				continue;
+
+			var sibling_cfg = sibling.uciconfig || sibling.section.uciconfig || sibling.map.config,
+			    sibling_sid = sibling.ucisection || section_id,
+			    sibling_opt = sibling.ucioption || sibling.option;
+
+			if (this_cfg != sibling_cfg || this_sid != sibling_sid || this_opt != sibling_opt)
+				continue;
+
+			if (!sibling.isActive(section_id))
+				continue;
+
+			/* found another active option aliasing the same uci option name,
+			 * so we can't remove the value */
+			return;
+		}
+
+		this.map.data.unset(this_cfg, this_sid, this_opt);
 	}
 });
 
@@ -2178,10 +2203,8 @@ var CBITypedSection = CBIAbstractSection.extend(/** @lends LuCI.form.TypedSectio
 
 			dom.append(createEl, [
 				E('div', {}, nameEl),
-				E('input', {
+				E('button', {
 					'class': 'cbi-button cbi-button-add',
-					'type': 'submit',
-					'value': btn_title || _('Add'),
 					'title': btn_title || _('Add'),
 					'click': ui.createHandlerFn(this, function(ev) {
 						if (nameEl.classList.contains('cbi-input-invalid'))
@@ -2189,11 +2212,23 @@ var CBITypedSection = CBIAbstractSection.extend(/** @lends LuCI.form.TypedSectio
 
 						return this.handleAdd(ev, nameEl.value);
 					}),
-					'disabled': this.map.readonly || null
-				})
+					'disabled': this.map.readonly || true
+				}, [ btn_title || _('Add') ])
 			]);
 
-			ui.addValidator(nameEl, 'uciname', true, 'blur', 'keyup');
+			if (this.map.readonly !== true) {
+				ui.addValidator(nameEl, 'uciname', true, function(v) {
+					var button = document.querySelector('.cbi-section-create > .cbi-button-add');
+					if (v !== '') {
+						button.disabled = null;
+						return true;
+					}
+					else {
+						button.disabled = true;
+						return _('Expecting: %s').format(_('non-empty value'));
+					}
+				}, 'blur', 'keyup');
+			}
 		}
 
 		return createEl;
@@ -2454,6 +2489,8 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 		    config_name = this.uciconfig || this.map.config,
 		    max_cols = isNaN(this.max_cols) ? this.children.length : this.max_cols,
 		    has_more = max_cols < this.children.length,
+		    drag_sort = this.sortable && !('ontouchstart' in window),
+		    touch_sort = this.sortable && ('ontouchstart' in window),
 		    sectionEl = E('div', {
 				'id': 'cbi-%s-%s'.format(config_name, this.sectiontype),
 				'class': 'cbi-section cbi-tblsection',
@@ -2482,14 +2519,16 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 				'id': 'cbi-%s-%s'.format(config_name, cfgsections[i]),
 				'class': 'tr cbi-section-table-row',
 				'data-sid': cfgsections[i],
-				'draggable': this.sortable ? true : null,
-				'mousedown': this.sortable ? L.bind(this.handleDragInit, this) : null,
-				'dragstart': this.sortable ? L.bind(this.handleDragStart, this) : null,
-				'dragover': this.sortable ? L.bind(this.handleDragOver, this) : null,
-				'dragenter': this.sortable ? L.bind(this.handleDragEnter, this) : null,
-				'dragleave': this.sortable ? L.bind(this.handleDragLeave, this) : null,
-				'dragend': this.sortable ? L.bind(this.handleDragEnd, this) : null,
-				'drop': this.sortable ? L.bind(this.handleDrop, this) : null,
+				'draggable': (drag_sort || touch_sort) ? true : null,
+				'mousedown': drag_sort ? L.bind(this.handleDragInit, this) : null,
+				'dragstart': drag_sort ? L.bind(this.handleDragStart, this) : null,
+				'dragover': drag_sort ? L.bind(this.handleDragOver, this) : null,
+				'dragenter': drag_sort ? L.bind(this.handleDragEnter, this) : null,
+				'dragleave': drag_sort ? L.bind(this.handleDragLeave, this) : null,
+				'dragend': drag_sort ? L.bind(this.handleDragEnd, this) : null,
+				'drop': drag_sort ? L.bind(this.handleDrop, this) : null,
+				'touchmove': touch_sort ? L.bind(this.handleTouchMove, this) : null,
+				'touchend': touch_sort ? L.bind(this.handleTouchEnd, this) : null,
 				'data-title': (sectionname && (!this.anonymous || this.sectiontitle)) ? sectionname : null,
 				'data-section-id': cfgsections[i]
 			});
@@ -2616,9 +2655,9 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 
 		if (this.sortable) {
 			dom.append(tdEl.lastElementChild, [
-				E('div', {
+				E('button', {
 					'title': _('Drag to reorder'),
-					'class': 'btn cbi-button drag-handle center',
+					'class': 'cbi-button drag-handle center',
 					'style': 'cursor:move',
 					'disabled': this.map.readonly || null
 				}, '☰')
@@ -2762,6 +2801,160 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 	},
 
 	/** @private */
+	determineBackgroundColor: function(node) {
+		var r = 255, g = 255, b = 255;
+
+		while (node) {
+			var s = window.getComputedStyle(node),
+			    c = (s.getPropertyValue('background-color') || '').replace(/ /g, '');
+
+			if (c != '' && c != 'transparent' && c != 'rgba(0,0,0,0)') {
+				if (/^#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})$/i.test(c)) {
+					r = parseInt(RegExp.$1, 16);
+					g = parseInt(RegExp.$2, 16);
+					b = parseInt(RegExp.$3, 16);
+				}
+				else if (/^rgba?\(([0-9]+),([0-9]+),([0-9]+)[,)]$/.test(c)) {
+					r = +RegExp.$1;
+					g = +RegExp.$2;
+					b = +RegExp.$3;
+				}
+
+				break;
+			}
+
+			node = node.parentNode;
+		}
+
+		return [ r, g, b ];
+	},
+
+	/** @private */
+	handleTouchMove: function(ev) {
+		if (!ev.target.classList.contains('drag-handle'))
+			return;
+
+		var touchLoc = ev.targetTouches[0],
+		    rowBtn = ev.target,
+		    rowElem = dom.parent(rowBtn, '.tr'),
+		    htmlElem = document.querySelector('html'),
+		    dragHandle = document.querySelector('.touchsort-element'),
+		    viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+		if (!dragHandle) {
+			var rowRect = rowElem.getBoundingClientRect(),
+			    btnRect = rowBtn.getBoundingClientRect(),
+			    paddingLeft = btnRect.left - rowRect.left,
+			    paddingRight = rowRect.right - btnRect.right,
+			    colorBg = this.determineBackgroundColor(rowElem),
+			    colorFg = (colorBg[0] * 0.299 + colorBg[1] * 0.587 + colorBg[2] * 0.114) > 186 ? [ 0, 0, 0 ] : [ 255, 255, 255 ];
+
+			dragHandle = E('div', { 'class': 'touchsort-element' }, [
+				E('strong', [ rowElem.getAttribute('data-title') ]),
+				rowBtn.cloneNode(true)
+			]);
+
+			Object.assign(dragHandle.style, {
+				position: 'absolute',
+				boxShadow: '0 0 3px rgba(%d, %d, %d, 1)'.format(colorFg[0], colorFg[1], colorFg[2]),
+				background: 'rgba(%d, %d, %d, 0.8)'.format(colorBg[0], colorBg[1], colorBg[2]),
+				top: rowRect.top + 'px',
+				left: rowRect.left + 'px',
+				width: rowRect.width + 'px',
+				height: (rowBtn.offsetHeight + 4) + 'px'
+			});
+
+			Object.assign(dragHandle.firstElementChild.style, {
+				position: 'absolute',
+				lineHeight: dragHandle.style.height,
+				whiteSpace: 'nowrap',
+				overflow: 'hidden',
+				textOverflow: 'ellipsis',
+				left: (paddingRight > paddingLeft) ? '' : '5px',
+				right: (paddingRight > paddingLeft) ? '5px' : '',
+				width: (Math.max(paddingLeft, paddingRight) - 10) + 'px'
+			});
+
+			Object.assign(dragHandle.lastElementChild.style, {
+				position: 'absolute',
+				top: '2px',
+				left: paddingLeft + 'px',
+				width: rowBtn.offsetWidth + 'px'
+			});
+
+			document.body.appendChild(dragHandle);
+
+			rowElem.classList.remove('flash');
+			rowBtn.blur();
+		}
+
+		dragHandle.style.top = (touchLoc.pageY - (parseInt(dragHandle.style.height) / 2)) + 'px';
+
+		rowElem.parentNode.querySelectorAll('[draggable]').forEach(function(tr, i, trs) {
+			var trRect = tr.getBoundingClientRect(),
+			    yTop = trRect.top + window.scrollY,
+			    yBottom = trRect.bottom + window.scrollY,
+			    yMiddle = yTop + ((yBottom - yTop) / 2);
+
+			tr.classList.remove('drag-over-above', 'drag-over-below');
+
+			if ((i == 0 || touchLoc.pageY >= yTop) && touchLoc.pageY <= yMiddle)
+				tr.classList.add('drag-over-above');
+			else if ((i == (trs.length - 1) || touchLoc.pageY <= yBottom) && touchLoc.pageY > yMiddle)
+				tr.classList.add('drag-over-below');
+		});
+
+		/* prevent standard scrolling and scroll page when drag handle is
+		 * moved very close (~30px) to the viewport edge */
+
+		ev.preventDefault();
+
+		if (touchLoc.clientY < 30)
+			window.requestAnimationFrame(function() { htmlElem.scrollTop -= 30 });
+		else if (touchLoc.clientY > viewportHeight - 30)
+			window.requestAnimationFrame(function() { htmlElem.scrollTop += 30 });
+	},
+
+	/** @private */
+	handleTouchEnd: function(ev) {
+		var rowElem = dom.parent(ev.target, '.tr'),
+		    htmlElem = document.querySelector('html'),
+		    dragHandle = document.querySelector('.touchsort-element'),
+		    targetElem = rowElem.parentNode.querySelector('.drag-over-above, .drag-over-below'),
+		    viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+		if (!dragHandle)
+			return;
+
+		if (targetElem) {
+		    var isBelow = targetElem.classList.contains('drag-over-below');
+
+			rowElem.parentNode.insertBefore(rowElem, isBelow ? targetElem.nextElementSibling : targetElem);
+
+			this.map.data.move(
+				this.uciconfig || this.map.config,
+				rowElem.getAttribute('data-sid'),
+				targetElem.getAttribute('data-sid'),
+				isBelow);
+
+			window.requestAnimationFrame(function() {
+				var rowRect = rowElem.getBoundingClientRect();
+
+				if (rowRect.top < 50)
+					htmlElem.scrollTop = (htmlElem.scrollTop + rowRect.top - 50);
+				else if (rowRect.bottom > viewportHeight - 50)
+					htmlElem.scrollTop = (htmlElem.scrollTop + viewportHeight - 50 - rowRect.height);
+
+				rowElem.classList.add('flash');
+			});
+
+			targetElem.classList.remove('drag-over-above', 'drag-over-below');
+		}
+
+		document.body.removeChild(dragHandle);
+	},
+
+	/** @private */
 	handleModalCancel: function(modalMap, ev) {
 		return Promise.resolve(ui.hideModal());
 	},
@@ -2856,7 +3049,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 				nodes,
 				E('div', { 'class': 'right' }, [
 					E('button', {
-						'class': 'btn',
+						'class': 'cbi-button',
 						'click': ui.createHandlerFn(this, 'handleModalCancel', m)
 					}, [ _('Dismiss') ]), ' ',
 					E('button', {
@@ -3602,13 +3795,47 @@ var CBIFlagValue = CBIValue.extend(/** @lends LuCI.form.FlagValue.prototype */ {
 	 * @default 0
 	 */
 
+	/**
+	 * Set a tooltip for the flag option.
+	 *
+	 * If set to a string, it will be used as-is as a tooltip.
+	 *
+	 * If set to a function, the function will be invoked and the return
+	 * value will be shown as a tooltip. If the return value of the function
+	 * is `null` no tooltip will be set.
+	 *
+	 * @name LuCI.form.TypedSection.prototype#tooltip
+	 * @type string|function
+	 * @default null
+	 */
+
+	/**
+	 * Set a tooltip icon.
+	 *
+	 * If set, this icon will be shown for the default one.
+	 * This could also be a png icon from the resources directory.
+	 *
+	 * @name LuCI.form.TypedSection.prototype#tooltipicon
+	 * @type string
+	 * @default 'ℹ️';
+	 */
+
 	/** @private */
 	renderWidget: function(section_id, option_index, cfgvalue) {
+		var tooltip = null;
+
+		if (typeof(this.tooltip) == 'function')
+			tooltip = this.tooltip.apply(this, [section_id]);
+		else if (typeof(this.tooltip) == 'string')
+			tooltip = (arguments.length > 1) ? ''.format.apply(this.tooltip, this.varargs(arguments, 1)) : this.tooltip;
+
 		var widget = new ui.Checkbox((cfgvalue != null) ? cfgvalue : this.default, {
 			id: this.cbid(section_id),
 			value_enabled: this.enabled,
 			value_disabled: this.disabled,
 			validate: L.bind(this.validate, this, section_id),
+			tooltip: tooltip,
+			tooltipicon: this.tooltipicon,
 			disabled: (this.readonly != null) ? this.readonly : this.map.readonly
 		});
 
@@ -3895,11 +4122,21 @@ var CBIDummyValue = CBIValue.extend(/** @lends LuCI.form.DummyValue.prototype */
 	 * @default null
 	 */
 
+    /**
+	 * Render the UCI option value as hidden using the HTML display: none style property.
+	 *
+	 * By default, the value is displayed
+	 *
+	 * @name LuCI.form.DummyValue.prototype#hidden
+	 * @type boolean
+	 * @default null
+	 */
+
 	/** @private */
 	renderWidget: function(section_id, option_index, cfgvalue) {
 		var value = (cfgvalue != null) ? cfgvalue : this.default,
 		    hiddenEl = new ui.Hiddenfield(value, { id: this.cbid(section_id) }),
-		    outputEl = E('div');
+		    outputEl = E('div', { 'style': this.hidden ? 'display:none' : null });
 
 		if (this.href && !((this.readonly != null) ? this.readonly : this.map.readonly))
 			outputEl.appendChild(E('a', { 'href': this.href }));
