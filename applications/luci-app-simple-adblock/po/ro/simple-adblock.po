@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-07 15:53+0000\n"
+"PO-Revision-Date: 2021-11-12 18:41+0000\n"
 "Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssimple-adblock/ro/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:221
 msgid "%s Error: %s"
@@ -127,7 +127,7 @@ msgstr ""
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:237
 #: applications/luci-app-simple-adblock/luasrc/view/simple-adblock/buttons.htm:68
 msgid "Disable"
-msgstr ""
+msgstr "Dezactivați"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:327
 msgid "Disable Debugging"
@@ -156,7 +156,7 @@ msgstr ""
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:238
 #: applications/luci-app-simple-adblock/luasrc/view/simple-adblock/buttons.htm:65
 msgid "Enable"
-msgstr ""
+msgstr "Activați"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:326
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:328
@@ -220,7 +220,7 @@ msgstr ""
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:190
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:194
 msgid "Info"
-msgstr ""
+msgstr "Informații"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:258
 msgid "LED to indicate status"
@@ -460,4 +460,4 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:261
 msgid "none"
-msgstr ""
+msgstr "niciunul"
