@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:41+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsshadowsocks-libev/ro/>\n"
 "Language: ro\n"
@@ -17,7 +17,7 @@ msgstr "-- tip de instanță --"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/shadowsocks-libev.js:225
 msgid "<hidden>"
-msgstr ""
+msgstr "<ascunse>"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/instances.js:78
 msgid "Advanced Settings"
@@ -25,11 +25,11 @@ msgstr "Setări avansate"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:88
 msgid "Bypass ss-redir for packets with dst address in this list"
-msgstr ""
+msgstr "Bypass ss-redir pentru pachetele cu adresa dst din această listă"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:74
 msgid "Bypass ss-redir for packets with src address in this list"
-msgstr ""
+msgstr "Bypass ss-redir pentru pachetele cu adresa src din această listă"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/servers.js:28
 msgid "Cancel"
@@ -40,32 +40,40 @@ msgid ""
 "Continue to have dst address checked for packets with src address in this "
 "list"
 msgstr ""
+"Continuă să fie verificată adresa dst pentru pachetele cu adresa src din "
+"această listă"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:60
 msgid "Default action for locally generated TCP packets"
-msgstr ""
+msgstr "Acțiune implicită pentru pachetele TCP generate local"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:104
 msgid ""
 "Default action for packets whose dst address do not match any of the dst ip "
 "list"
 msgstr ""
+"Acțiune implicită pentru pachetele a căror adresă dst nu se potrivește cu "
+"niciuna din lista dst ip"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:83
 msgid ""
 "Default action for packets whose src address do not match any of the src ip/"
 "net list"
 msgstr ""
+"Acțiune implicită pentru pachetele a căror adresă src nu se potrivește cu "
+"niciuna din lista src ip/net"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/servers.js:15
 msgid ""
 "Definition of remote shadowsocks servers. Disable any of them will also "
 "disable instances referring to it."
 msgstr ""
+"Definiția serverelor shadowsocks la distanță. Dacă se dezactivează oricare "
+"dintre ele, se vor dezactiva și instanțele care se referă la acesta."
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:44
 msgid "Destination Settings"
-msgstr ""
+msgstr "Setări de destinație"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/instances.js:79
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:46
@@ -79,19 +87,19 @@ msgstr "Dezactivat"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:103
 msgid "Dst default"
-msgstr ""
+msgstr "Dst implicit"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:87
 msgid "Dst ip/net bypass"
-msgstr ""
+msgstr "Dst ip/net bypass"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:95
 msgid "Dst ip/net bypass file"
-msgstr ""
+msgstr "Fișier de bypass ip/net Dst"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:90
 msgid "Dst ip/net forward"
-msgstr ""
+msgstr "Dst ip/rețea de redirecționare"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:99
 msgid "Dst ip/net forward file"
@@ -354,7 +362,7 @@ msgstr ""
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/shadowsocks-libev.js:191
 msgid "Verbose"
-msgstr ""
+msgstr "Verbală"
 
 #: applications/luci-app-shadowsocks-libev/htdocs/luci-static/resources/view/shadowsocks-libev/rules.js:52
 msgid "ss-redir for TCP"

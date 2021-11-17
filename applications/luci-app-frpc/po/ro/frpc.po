@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-07 15:53+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfrpc/ro/>\n"
 "Language: ro\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:16
 msgid "Additional configs"
@@ -17,29 +17,31 @@ msgstr "Configurații adiționale"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:38
 msgid "Additional settings"
-msgstr ""
+msgstr "Setări adiționale"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:26
 msgid "Admin address"
-msgstr ""
+msgstr "Adresa administratorului"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:29
 msgid "Admin password"
-msgstr ""
+msgstr "Parola de administrator"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:27
 msgid "Admin port"
-msgstr ""
+msgstr "Port administrativ"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:28
 msgid "Admin user"
-msgstr ""
+msgstr "Utilizator administrator"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:26
 msgid ""
 "AdminAddr specifies the address that the admin server binds to.<br />By "
 "default, this value is \"127.0.0.1\"."
 msgstr ""
+"AdminAddr specifică adresa la care se leagă serverul de administrare.<br /"
+">În mod implicit, această valoare este \"127.0.0.0.1\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:27
 msgid ""
@@ -47,18 +49,26 @@ msgid ""
 "value is 0, the admin server will not be started.<br />By default, this value "
 "is 0."
 msgstr ""
+"AdminPort specifică portul pe care serverul de administrare trebuie să "
+"asculte. Dacă această valoare este 0, serverul de administrare nu va fi "
+"pornit.<br />În mod implicit, această valoare este 0."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:29
 msgid ""
 "AdminPwd specifies the password that the admin server will use for login."
 "<br />By default, this value is \"admin\"."
 msgstr ""
+"AdminPwd specifică parola pe care serverul de administrare o va utiliza "
+"pentru autentificare.<br />Din mod implicit, această valoare este \"admin\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:28
 msgid ""
 "AdminUser specifies the username that the admin server will use for login."
 "<br />By default, this value is \"admin\"."
 msgstr ""
+"AdminUser specifică numele de utilizator pe care serverul de administrare îl "
+"va utiliza pentru autentificare.<br />În mod implicit, această valoare este "
+"\"admin\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:30
 msgid "Assets dir"
@@ -70,26 +80,30 @@ msgid ""
 "resources from. If this value is \"\", assets will be loaded from the "
 "bundled executable using statik.<br />By default, this value is \"\"."
 msgstr ""
+"AssetsDir specifică directorul local din care serverul de administrare va "
+"încărca resursele. Dacă această valoare este \"\", resursele vor fi "
+"încărcate din executabilul inclus în pachet, utilizând statik.<br />Din mod "
+"implicit, această valoare este \"\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:168
 msgid "Collecting data ..."
-msgstr ""
+msgstr "Colectarea datelor ..."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:176
 msgid "Common Settings"
-msgstr ""
+msgstr "Setări comune"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:44
 msgid "Compression"
-msgstr ""
+msgstr "Comprimare"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:16
 msgid "Config files include in temporary config file"
-msgstr ""
+msgstr "Fișiere de configurare incluse în fișierul de configurare temporar"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:54
 msgid "Custom domains"
-msgstr ""
+msgstr "Domenii personalizate"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:24
 msgid "Disable log color"

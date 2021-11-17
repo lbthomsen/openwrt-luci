@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-19 19:35+0200\n"
-"PO-Revision-Date: 2021-11-12 18:41+0000\n"
+"PO-Revision-Date: 2021-11-15 14:07+0000\n"
 "Last-Translator: drax red <drax@outlook.dk>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsolsr/da/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/mid.htm:13
 msgid "Active MID announcements"
-msgstr ""
+msgstr "Aktive MID-meddelelser"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/topology.htm:14
 msgid "Active OLSR nodes"
@@ -168,7 +168,7 @@ msgstr ""
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:55
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:107
 msgid "Gateway"
-msgstr ""
+msgstr "Gateway"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:42
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:222
@@ -240,7 +240,7 @@ msgstr ""
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:129
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:116
 msgid "Hello interval"
-msgstr ""
+msgstr "Hej interval"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:311
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:292
@@ -303,23 +303,25 @@ msgstr ""
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:32
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:32
 msgid "IP Addresses"
-msgstr ""
+msgstr "IP-adresser"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:48
 msgid ""
 "IP-version to use. If 6and4 is selected then one olsrd instance is started "
 "for each protocol."
 msgstr ""
+"IP-version, der skal anvendes. Hvis 6og4 er valgt, startes der en olsrd-"
+"instans for hver protokol."
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:61
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:113
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:278
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:103
 msgid "IPv4 broadcast"
-msgstr ""
+msgstr "IPv4 broadcast"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:279
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:104
@@ -592,7 +594,7 @@ msgstr ""
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/interfaces.htm:26
 msgid "MTU"
-msgstr ""
+msgstr "MTU"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:132
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:126
@@ -685,7 +687,7 @@ msgstr ""
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/overview.htm:173
 msgid "Nodes"
-msgstr ""
+msgstr "Noder"
 
 #: applications/luci-app-olsr/luasrc/controller/olsr.lua:27
 msgid "OLSR"
@@ -744,7 +746,7 @@ msgstr ""
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/overview.htm:157
 msgid "Overview"
-msgstr ""
+msgstr "Oversigt"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/hna.htm:87
 msgid "Overview of currently active OLSR host net announcements"

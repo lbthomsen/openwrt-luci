@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:40+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsattendedsysupgrade/ro/>\n"
 "Language: ro\n"
@@ -17,11 +17,11 @@ msgstr "Adresă"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:16
 msgid "Address of the sysupgrade server"
-msgstr ""
+msgstr "Adresa serverului sysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:26
 msgid "Advanced Mode"
-msgstr ""
+msgstr "Modul avansat"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:9
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:432
@@ -31,15 +31,15 @@ msgstr "a participat Sysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:10
 msgid "Attendedsysupgrade Configuration."
-msgstr ""
+msgstr "A participat la configurațiaysupgrade."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:157
 msgid "Build Date"
-msgstr ""
+msgstr "Data construirii"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:229
 msgid "Building firmware sysupgrade image"
-msgstr ""
+msgstr "Construirea imaginii de firmware sysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:202
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:369
@@ -64,26 +64,28 @@ msgstr "Configurație"
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:43
 msgid "Could not reach API at \"%s\". Please try again later."
 msgstr ""
+"Nu s-a putut accesa API la \"%s\". Vă rugăm să încercați din nou mai târziu."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:61
 msgid "Downloading firmware from server to browser"
-msgstr ""
+msgstr "Descărcarea firmware-ului de pe server pe browser"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:266
 msgid "Error building the sysupgrade"
-msgstr ""
+msgstr "Eroare de construire a sysupgrade-ului"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:41
 msgid "Error connecting to upgrade server"
-msgstr ""
+msgstr "Eroare de conectare la serverul de actualizare"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:89
 msgid "Error during download of firmware. Please try again"
 msgstr ""
+"Eroare în timpul descărcării firmware-ului. Vă rugăm să încercați din nou"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:150
 msgid "File"
-msgstr ""
+msgstr "Fișier"
 
 #: applications/luci-app-attendedsysupgrade/root/usr/share/rpcd/acl.d/luci-app-attendedsysupgrade.json:3
 msgid "Grant UCI access to LuCI app attendedsysupgrade"
@@ -131,7 +133,7 @@ msgstr ""
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:155
 msgid "SHA256"
-msgstr ""
+msgstr "SHA256"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:22
 msgid "Search for new sysupgrades on opening the tab"

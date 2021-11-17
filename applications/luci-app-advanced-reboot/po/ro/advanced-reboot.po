@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:40+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadvanced-reboot/ro/>\n"
 "Language: ro\n"
@@ -23,7 +23,7 @@ msgstr "Anulare"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:163
 msgid "Compressed"
-msgstr ""
+msgstr "Comprimat"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:125
 msgid "Confirm"
@@ -32,19 +32,19 @@ msgstr "Confirmare"
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:77
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:106
 msgid "Device unreachable! Still waiting for device..."
-msgstr ""
+msgstr "Dispozitiv inaccesibil! Încă aștept dispozitivul..."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:198
 msgid "ERROR:"
-msgstr "Eroare"
+msgstr "EROARE:"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:206
 msgid "Firmware"
-msgstr ""
+msgstr "Firmware"
 
 #: applications/luci-app-advanced-reboot/root/usr/share/rpcd/acl.d/luci-app-advanced-reboot.json:3
 msgid "Grant UCI and file access for luci-app-advanced-reboot"
-msgstr ""
+msgstr "Acordă UCI și acces la fișiere pentru luci-app-advanced-reboot"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:122
 msgid "No access to fw_printenv or fw_printenv!"
@@ -60,7 +60,7 @@ msgstr "Partitii"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:226
 msgid "Perform power off..."
-msgstr "Efectuare oprire"
+msgstr "Efectuați oprirea..."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:46
 msgid "Power Off Device"
@@ -81,7 +81,7 @@ msgstr "Reporniți dispozitivul într-o partiție alternativă"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:157
 msgid "Reboot to alternative partition..."
-msgstr "Reporniți in partiția alternativă"
+msgstr "Reporniți pe o partiție alternativă..."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:154
 msgid "Reboot to current partition"
@@ -96,7 +96,7 @@ msgstr "Repornire…"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:38
 msgid "Shutting down..."
-msgstr "Oprire"
+msgstr "Închidere..."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:205
 msgid "Status"
@@ -139,7 +139,7 @@ msgstr ""
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:11
 msgid "Unable to find Dual Boot Flag Partition."
-msgstr "Imposibil de găsit partiția Dual Boot"
+msgstr "Imposibil de găsit partiția Dual Boot."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:14
 msgid "Unable to obtain firmware environment variable: %s."

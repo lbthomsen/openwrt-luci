@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-11-12 18:40+0000\n"
+"PO-Revision-Date: 2021-11-16 17:37+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstinyproxy/ro/>\n"
@@ -28,14 +28,16 @@ msgid ""
 "Adds an \"X-Tinyproxy\" HTTP header with the client IP address to forwarded "
 "requests"
 msgstr ""
+"Adaugă un antet HTTP \"X-Tinyproxy\" cu adresa IP a clientului la cererile "
+"redirecționate"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:126
 msgid "Allowed clients"
-msgstr ""
+msgstr "Clienți autorizați"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:133
 msgid "Allowed connect ports"
-msgstr ""
+msgstr "Porturi de conectare permise"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:47
 msgid "Bind address"
@@ -46,30 +48,42 @@ msgid ""
 "By default, basic POSIX expressions are used for filtering. Enable this to "
 "activate extended regular expressions"
 msgstr ""
+"În mod implicit, pentru filtrare se utilizează expresii POSIX de bază. "
+"Activați această opțiune pentru a activa expresiile regulate extinse"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:153
 msgid ""
 "By default, filter strings are treated as case-insensitive. Enable this to "
 "make the matching case-sensitive"
 msgstr ""
+"În mod implicit, șirurile de caractere de filtrare sunt tratate fără a ține "
+"cont de majuscule și minuscule. Activați această opțiune pentru a face ca "
+"potrivirea să fie sensibilă la majuscule și minuscule"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:145
 msgid ""
 "By default, filtering is done based on domain names. Enable this to match "
 "against URLs instead"
 msgstr ""
+"În mod implicit, filtrarea se face pe baza numelor de domenii. Activați "
+"această opțiune pentru a se potrivi cu URL-urile"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:157
 msgid ""
 "By default, the filter rules act as blacklist. Enable this option to only "
 "allow matched URLs or domain names"
 msgstr ""
+"În mod implicit, regulile de filtrare acționează ca o listă neagră. Activați "
+"această opțiune pentru a permite doar URL-urile sau numele de domenii "
+"corespunzătoare"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:226
 msgid ""
 "Can be either an IP address or range, a domain name or \".\" for any host "
 "without domain"
 msgstr ""
+"Poate fi fie o adresă sau un interval IP, un nume de domeniu sau \".\" "
+"pentru orice gazdă fără domeniu"
 
 #: applications/luci-app-tinyproxy/root/usr/share/luci/menu.d/luci-app-tinyproxy.json:23
 msgid "Configuration"
@@ -77,31 +91,31 @@ msgstr "Configurație"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:164
 msgid "Connection timeout"
-msgstr ""
+msgstr "Timeout de conectare"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:156
 msgid "Default deny"
-msgstr ""
+msgstr "Refuz implicit"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:17
 msgid "Enable Tinyproxy server"
-msgstr ""
+msgstr "Activați serverul Tinyproxy"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:55
 msgid "Error page"
-msgstr ""
+msgstr "Pagina de eroare"
 
 #: applications/luci-app-tinyproxy/luasrc/view/tinyproxy_status.htm:36
 msgid "Failed to retrieve statistics from url:"
-msgstr ""
+msgstr "Nu a reușit să recupereze statisticile din url:"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:148
 msgid "Filter by RegExp"
-msgstr ""
+msgstr "Filtrează după RegExp"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:144
 msgid "Filter by URLs"
-msgstr ""
+msgstr "Filtrare după URL-uri"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:152
 msgid "Filter case-sensitive"
@@ -117,7 +131,7 @@ msgstr ""
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:11
 msgid "General settings"
-msgstr ""
+msgstr "Setări generale"
 
 #: applications/luci-app-tinyproxy/root/usr/share/rpcd/acl.d/luci-app-tinyproxy.json:3
 msgid "Grant UCI access for luci-app-tinyproxy"
@@ -152,15 +166,15 @@ msgstr ""
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:39
 msgid "Listen address"
-msgstr ""
+msgstr "Adresa de ascultare"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:31
 msgid "Listen port"
-msgstr ""
+msgstr "Port de ascultare"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:73
 msgid "Log file"
-msgstr ""
+msgstr "Fișier jurnal"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:74
 msgid "Log file to use for dumping messages"

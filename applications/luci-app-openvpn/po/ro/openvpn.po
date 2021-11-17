@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-11-12 18:40+0000\n"
-"Last-Translator: Simona Iacob <s@zp1.net>\n"
+"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsopenvpn/ro/>\n"
 "Language: ro\n"
@@ -19,7 +19,7 @@ msgstr "'net30', 'p2p', ori 'subnet'"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:481
 msgid "Accept options pushed from server"
-msgstr ""
+msgstr "Acceptarea opțiunilor trimise de pe server"
 
 #: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:92
 msgid "Add"
@@ -27,64 +27,65 @@ msgstr "Adaugă"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:225
 msgid "Add route after establishing connection"
-msgstr ""
+msgstr "Adăugarea rutei după stabilirea conexiunii"
 
 #: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:92
 msgid "Add template based configuration"
-msgstr ""
+msgstr "Adăugați configurația bazată pe șablon"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:748
 msgid "Additional authentication over TLS"
-msgstr ""
+msgstr "Autentificare suplimentară prin TLS"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:417
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:57
 msgid "Allow client-to-client traffic"
-msgstr ""
+msgstr "Permiteți traficul de la client la client"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:422
 msgid "Allow multiple clients with same certificate"
-msgstr ""
+msgstr "Permiteți mai mulți clienți cu același certificat"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:740
 msgid "Allow only one session"
-msgstr ""
+msgstr "Permiteți doar o singură sesiune"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:193
 msgid "Allow remote to change its IP or port"
-msgstr ""
+msgstr "Permiteți telecomenzii să își schimbe IP-ul sau portul"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:457
 msgid "Allowed maximum of connected clients"
-msgstr ""
+msgstr "Numărul maxim permis de clienți conectați"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:462
 msgid "Allowed maximum of internal"
-msgstr ""
+msgstr "Numărul maxim admis de unități interne"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:467
 msgid "Allowed maximum of new connections"
-msgstr ""
+msgstr "Numărul maxim permis de conexiuni noi"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:68
 msgid "Append log to file"
-msgstr ""
+msgstr "Adăugați jurnalul la fișier"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:486
 msgid "Authenticate using username/password"
-msgstr ""
+msgstr "Autentificare cu nume de utilizator/parolă"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:556
 msgid "Automatically redirect default route"
-msgstr ""
+msgstr "Redirecționarea automată a rutei implicite"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:11
 msgid "Below is a list of configured OpenVPN instances and their current state"
 msgstr ""
+"Mai jos este o listă a instanțelor OpenVPN configurate și starea lor curentă"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:120
 msgid "Call down cmd/script before TUN/TAP close"
-msgstr ""
+msgstr "Apelarea cmd/scriptului înainte de închiderea TUN/TAP"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:658
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:77
@@ -550,7 +551,7 @@ msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:37
 msgid "Save"
-msgstr "Salvează"
+msgstr "Salvați"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:61
 msgid ""

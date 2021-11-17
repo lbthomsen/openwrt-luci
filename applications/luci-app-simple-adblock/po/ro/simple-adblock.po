@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:41+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssimple-adblock/ro/>\n"
 "Language: ro\n"
@@ -13,76 +13,78 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:221
 msgid "%s Error: %s"
-msgstr ""
+msgstr "%s Eroare: %s"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:219
 msgid "%s Error: %s %s"
-msgstr ""
+msgstr "%s Eroare: %s %s"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:133
 msgid "%s is not installed or not found"
-msgstr ""
+msgstr "%s nu este instalat sau nu este găsit"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:299
 msgid "Add IPv6 entries"
-msgstr ""
+msgstr "Adăugați intrări IPv6"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:297
 msgid "Add IPv6 entries to block-list."
-msgstr ""
+msgstr "Adăugați intrări IPv6 la block-list."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:267
 msgid "Advanced Configuration"
-msgstr ""
+msgstr "Configurație avansată"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:339
 msgid "Allowed Domain URLs"
-msgstr ""
+msgstr "URL-uri de domeniu permise"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:334
 msgid "Allowed Domains"
-msgstr ""
+msgstr "Domenii permise"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:332
 msgid "Allowed and Blocked Lists Management"
-msgstr ""
+msgstr "Gestionarea listelor permise și blocate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:321
 msgid ""
 "Attempt to create a compressed cache of block-list in the persistent memory."
 msgstr ""
+"Încercarea de a crea o memorie cache comprimată a listei de blocuri în "
+"memoria persistentă."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:236
 msgid "Automatic Config Update"
-msgstr ""
+msgstr "Actualizare automată a configurației"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:234
 msgid "Basic Configuration"
-msgstr ""
+msgstr "Configurație de Bază"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:349
 msgid "Blocked Domain URLs"
-msgstr ""
+msgstr "URL-uri de domenii blocate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:344
 msgid "Blocked Domains"
-msgstr ""
+msgstr "Domenii Blocate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:354
 msgid "Blocked Hosts URLs"
-msgstr ""
+msgstr "Gazde blocate URL-uri"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:202
 msgid "Blocking %s domains (with %s)."
-msgstr ""
+msgstr "Blocarea domeniilor %s (cu %s)."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:192
 msgid "Cache file containing %s domains found."
-msgstr ""
+msgstr "A fost găsit fișierul cache care conține %s domenii."
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:212
 msgid "Collected Errors"
-msgstr ""
+msgstr "Erori colectate"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:196
 msgid "Compressed cache file found."

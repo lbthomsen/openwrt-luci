@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:41+0000\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
 "Last-Translator: drax red <drax@outlook.dk>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/da/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:430
 msgid "\"../\" not allowed in path for Security Reason."
-msgstr ""
+msgstr "\"../\" er ikke tilladt i stien af sikkerhedsårsag."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:462
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:531
@@ -289,7 +289,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:263
 msgid "Global Settings"
-msgstr ""
+msgstr "Globale indstillinger"
 
 #: applications/luci-app-ddns/root/usr/share/rpcd/acl.d/luci-app-ddns.json:3
 msgid "Grant access to ddns procedures"
@@ -361,7 +361,7 @@ msgstr "Info"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:262
 msgid "Information"
-msgstr ""
+msgstr "Information"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:711
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:728
@@ -417,7 +417,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:938
 msgid "Log to syslog"
-msgstr ""
+msgstr "Log til syslog"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:619
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1120
@@ -461,7 +461,7 @@ msgstr ""
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 msgid "Never"
-msgstr ""
+msgstr "Aldrig"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:498
 msgid "New DDns Service…"
@@ -476,7 +476,7 @@ msgstr ""
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1125
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
-msgstr ""
+msgstr "Ingen data"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:390
 msgid "No certificates found"
@@ -497,7 +497,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:945
 msgid "Notice"
-msgstr "Meddelelse"
+msgstr "Varsel"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:436
 msgid "Number of last lines stored in log files"
@@ -558,7 +558,7 @@ msgstr "Adgangskode"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:773
 msgid "Path to CA-Certificate"
-msgstr ""
+msgstr "Sti til CA-certifikat"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
 msgid ""
@@ -642,7 +642,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:459
 msgid "Services"
-msgstr ""
+msgstr "Tjenester"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:454
 msgid "Services URL Download"
@@ -674,7 +674,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:571
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
 msgid "Stop DDNS"

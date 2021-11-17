@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:40+0000\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsprivoxy/ro/>\n"
@@ -24,45 +24,50 @@ msgid ""
 "A URL to documentation about the local Privoxy setup, configuration or "
 "policies."
 msgstr ""
+"O adresă URL către documentația despre setările, configurația sau politicile "
+"locale Privoxy."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:325
 msgid "A directory where Privoxy can create temporary files."
-msgstr ""
+msgstr "Un director în care Privoxy poate crea fișiere temporare."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:84
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:87
 msgid "Access Control"
-msgstr ""
+msgstr "Controlul accesului"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:337
 msgid "Actions that are applied to all sites and maybe overruled later on."
 msgstr ""
+"Acțiuni care se aplică tuturor site-urilor și care pot fi anulate ulterior."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:308
 msgid "An alternative directory where the templates are loaded from."
-msgstr ""
+msgstr "Un director alternativ din care se încarcă șabloanele."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:206
 msgid "An email address to reach the Privoxy administrator."
-msgstr ""
+msgstr "O adresă de e-mail pentru a contacta administratorul Privoxy."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:691
 msgid ""
 "Assumed server-side keep-alive timeout (in seconds) if not specified by the "
 "server."
 msgstr ""
+"Timpul de așteptare presupus de server (în secunde) dacă nu este specificat "
+"de server."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:151
 msgid "Boot delay"
-msgstr ""
+msgstr "Întârziere la pornire"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:869
 msgid "CGI user interface"
-msgstr ""
+msgstr "Interfață utilizator CGI"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:857
 msgid "Common Log Format"
-msgstr ""
+msgstr "Format comun de jurnal"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:92
 msgid ""
@@ -70,32 +75,37 @@ msgid ""
 "proxies. Note that parent proxies can severely decrease your privacy level. "
 "Also specified here are SOCKS proxies."
 msgstr ""
+"Configurați aici rutarea cererilor HTTP printr-un lanț de proxy-uri "
+"multiple. Rețineți că proxies de tip parental pot scădea considerabil "
+"nivelul de confidențialitate. Tot aici sunt specificate și proxy-urile SOCKS."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:851
 msgid "Debug GIF de-animation"
-msgstr ""
+msgstr "Depanare GIF de-animare"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:833
 msgid "Debug force feature"
-msgstr ""
+msgstr "Funcția Debug Force"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:845
 msgid "Debug redirects"
-msgstr ""
+msgstr "Depanarea redirecționărilor"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:839
 msgid "Debug regular expression filters"
-msgstr ""
+msgstr "Depanarea filtrelor de expresie regulată"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:152
 msgid "Delay (in seconds) during system boot before Privoxy start"
 msgstr ""
+"Întârziere (în secunde) în timpul pornirii sistemului înainte de pornirea "
+"Privoxy"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:261
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:298
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:315
 msgid "Directory does not exist!"
-msgstr ""
+msgstr "Directorul nu există!"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:557
 msgid "Disabled == Transparent Proxy Mode"
