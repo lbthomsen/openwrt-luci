@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-25 19:17+0200\n"
-"PO-Revision-Date: 2021-11-12 18:40+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstransmission/ro/>\n"
 "Language: ro\n"
@@ -25,19 +25,19 @@ msgstr "Viteză alternativă activată"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:277
 msgid "Alternative speed time begin"
-msgstr ""
+msgstr "Timp de viteză alternativă începe"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:283
 msgid "Alternative speed time day"
-msgstr ""
+msgstr "Viteză alternativă timp zi"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:280
 msgid "Alternative speed time end"
-msgstr ""
+msgstr "Viteză alternativă timp sfârșit"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:274
 msgid "Alternative speed timing enabled"
-msgstr ""
+msgstr "Temporizarea vitezei alternative activată"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:62
 msgid "Alternative upload speed"
@@ -45,7 +45,7 @@ msgstr "Viteza de upload alternativa"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:113
 msgid "Automatically start added torrents"
-msgstr ""
+msgstr "Pornirea automată a torrentelor adăugate"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:56
 msgid "Bandwidth settings"
@@ -53,39 +53,39 @@ msgstr "Setari latime de banda"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:174
 msgid "Binding address IPv4"
-msgstr ""
+msgstr "Adresa de legătură IPv4"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:176
 msgid "Binding address IPv6"
-msgstr ""
+msgstr "Adresa de legătură IPv6"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:86
 msgid "Block list enabled"
-msgstr ""
+msgstr "Lista de blocare activată"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:89
 msgid "Blocklist URL"
-msgstr ""
+msgstr "URL-ul listei de blocare"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:83
 msgid "Blocklists"
-msgstr ""
+msgstr "Listă de blocare"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:131
 msgid "Cache size in MB"
-msgstr ""
+msgstr "Dimensiunea cache-ului în MB"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:50
 msgid "Config file directory"
-msgstr ""
+msgstr "Directorul fișierului de configurare"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:53
 msgid "Custom Web UI directory"
-msgstr ""
+msgstr "Director Web UI personalizat"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:133
 msgid "DHT enabled"
-msgstr ""
+msgstr "DHT activat"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:151
 msgid "Debug"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:40+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnlbwmon/ro/>\n"
 "Language: ro\n"
@@ -17,71 +17,76 @@ msgstr "%d Gazde IPv4-only"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:545
 msgid "%d IPv6-only hosts"
-msgstr ""
+msgstr "%d Gazde numai IPv6"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:552
 msgid "%d dual-stack hosts"
-msgstr ""
+msgstr "%d gazde dual-stack"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:114
 msgid "%s and %s"
-msgstr ""
+msgstr "%s și %s"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:112
 msgid "%s, %s and %s"
-msgstr ""
+msgstr "%s, %s și %s"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:93
 msgid "-1 - Restart every last day of month"
-msgstr ""
+msgstr "-1 - Repornire în fiecare ultimă zi a lunii"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:94
 msgid "-7 - Restart a week before end of month"
-msgstr ""
+msgstr "-7 - Reîncepeți cu o săptămână înainte de sfârșitul lunii"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:92
 msgid "1 - Restart every 1st of month"
-msgstr ""
+msgstr "1 - Repornire în fiecare 1 a lunii"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:158
 msgid "10m - frequent commits at the expense of flash wear"
-msgstr ""
+msgstr "10m - angajări frecvente în detrimentul uzurii flash-ului"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:157
 msgid "12h - compromise between risk of data loss and flash wear"
-msgstr ""
+msgstr "12h - compromis între riscul de pierdere a datelor și uzura flash-ului"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:156
 msgid "24h - least flash wear at the expense of data loss risk"
 msgstr ""
+"24h - uzură minimă a flash-ului în detrimentul riscului de pierdere a datelor"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:163
 msgid "30s - refresh twice per minute for reasonably current stats"
 msgstr ""
+"30s - reîmprospătare de două ori pe minut pentru statisticile actuale în mod "
+"rezonabil"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:164
 msgid "5m - rarely refresh to avoid frequently clearing conntrack counters"
 msgstr ""
+"5m - reîmprospătați rar pentru a evita golirea frecventă a contoarelor "
+"Conntrack"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:159
 msgid "60s - commit minutely, useful for non-flash storage"
-msgstr ""
+msgstr "60s - commit minuțios, util pentru stocare non-flash"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:827
 msgid "<big id=\"conn-total\">0</big> connections"
-msgstr ""
+msgstr "<big id=\"conn-total\">0</big> conexiuni"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:824
 msgid "<big id=\"host-total\">0</big> hosts"
-msgstr ""
+msgstr "<big id=\"host-total\">0</big> gazde"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:917
 msgid "<big id=\"ipv6-hosts\">0%</big> IPv6 support rate among hosts"
-msgstr ""
+msgstr "<big id=\"ipv6-hosts\">0%</big> Rata de suport IPv6 în rândul gazdelor"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:919
 msgid "<big id=\"ipv6-rx\">0B</big> total IPv6 download"
-msgstr ""
+msgstr "<big id=\"ipv6-rx\">0B</big> total descărcare IPv6"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:918
 msgid "<big id=\"ipv6-share\">0%</big> of the total traffic is IPv6"
@@ -210,7 +215,7 @@ msgstr "Închideți"
 
 #: applications/luci-app-nlbwmon/root/usr/share/luci/menu.d/luci-app-nlbwmon.json:16
 msgid "Display"
-msgstr ""
+msgstr "Afișare"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:604
 msgid "Down. (Bytes)"

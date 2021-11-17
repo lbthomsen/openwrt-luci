@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-02 14:47+0000\n"
-"Last-Translator: Andrei Pavel <andreicristianpavel@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfrps/ro/>\n"
 "Language: ro\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:15
 msgid "Additional configs"
@@ -17,7 +17,7 @@ msgstr "Configurații adiționale"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:43
 msgid "Additional settings"
-msgstr ""
+msgstr "Setări adiționale"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:40
 msgid "Allow ports"
@@ -60,6 +60,8 @@ msgid ""
 "BindAddr specifies the address that the server binds to.<br />By default, this "
 "value is \"0.0.0.0\"."
 msgstr ""
+"BindAddr specifică adresa la care se leagă serverul.<br />În mod implicit, "
+"această valoare este \"0.0.0.0\"."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:22
 msgid ""
@@ -67,12 +69,17 @@ msgid ""
 "is 0, the server will not listen for KCP connections.<br />By default, this "
 "value is 0."
 msgstr ""
+"BindKcpPort specifică portul KCP pe care serverul ascultă. Dacă această "
+"valoare este 0, serverul nu va asculta conexiunile KCP.<br />În mod "
+"implicit, această valoare este 0."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:20
 msgid ""
 "BindPort specifies the port that the server listens on.<br />By default, this "
 "value is 7000."
 msgstr ""
+"BindPort specifică portul pe care serverul ascultă.<br />În mod implicit, "
+"această valoare este 7000."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:21
 msgid ""
@@ -80,22 +87,25 @@ msgid ""
 "is 0, the server will not listen for UDP connections.<br />By default, this "
 "value is 0"
 msgstr ""
+"BindUdpPort specifică portul UDP pe care serverul ascultă. Dacă această "
+"valoare este 0, serverul nu va asculta conexiuni UDP.<br />În mod implicit, "
+"această valoare este 0"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:143
 msgid "Collecting data ..."
-msgstr ""
+msgstr "Colectarea datelor ..."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:151
 msgid "Common settings"
-msgstr ""
+msgstr "Setări comune"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:15
 msgid "Config files include in temporary config file"
-msgstr ""
+msgstr "Fișiere de configurare incluse în fișierul de configurare temporar"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:39
 msgid "Custom 404 page"
-msgstr ""
+msgstr "Pagina 404 personalizată"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:39
 msgid ""
@@ -103,6 +113,9 @@ msgid ""
 "value is \"\", a default page will be displayed.<br />By default, this value "
 "is \"\"."
 msgstr ""
+"Custom404Page specifică o cale către o pagină 404 personalizată care urmează "
+"să fie afișată. Dacă această valoare este \"\", va fi afișată o pagină "
+"implicită.<br />Din mod implicit, această valoare este \"\"."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:27
 msgid "Dashboard address"
@@ -180,7 +193,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:32
 msgid "Log file"
-msgstr ""
+msgstr "Fișier jurnal"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:33
 msgid "Log level"

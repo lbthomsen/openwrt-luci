@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:41+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationshttps-dns-proxy/ro/>\n"
 "Language: ro\n"
@@ -13,59 +13,59 @@ msgstr ""
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:92
 msgid "%s DoH at %s:%s"
-msgstr ""
+msgstr "%s DoH la %s:%s"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:73
 msgid "%s is not installed or not found"
-msgstr ""
+msgstr "%s nu este instalat sau nu este găsit"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.adguard.dns-family.lua:3
 msgid "AdGuard (Family Protection)"
-msgstr ""
+msgstr "AdGuard (Protecția familiei)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.adguard.dns.lua:3
 msgid "AdGuard (Standard)"
-msgstr ""
+msgstr "AdGuard (Standard)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.alidns.dns.lua:3
 msgid "AliDNS"
-msgstr ""
+msgstr "AliDNS"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/ca.cira.canadianshield.family.lua:3
 msgid "CIRA Canadian Shield (Family)"
-msgstr ""
+msgstr "CIRA Canadian Shield (Familie)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/ca.cira.canadianshield.private.lua:3
 msgid "CIRA Canadian Shield (Private)"
-msgstr ""
+msgstr "CIRA Canadian Shield (Privat)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/ca.cira.canadianshield.protected.lua:3
 msgid "CIRA Canadian Shield (Protected)"
-msgstr ""
+msgstr "CIRA Canadian Shield (protejat)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/org.cleanbrowsing.doh-adult.lua:3
 msgid "CleanBrowsing (Adult Filter)"
-msgstr ""
+msgstr "CleanBrowsing (Filtru pentru adulți)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/org.cleanbrowsing.doh-family.lua:3
 msgid "CleanBrowsing (Family Filter)"
-msgstr ""
+msgstr "CleanBrowsing (Filtru de familie)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/org.cleanbrowsing.doh-security.lua:3
 msgid "CleanBrowsing (Security Filter)"
-msgstr ""
+msgstr "CleanBrowsing (Filtru de securitate)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.cloudflare-dns.lua:3
 msgid "Cloudflare"
-msgstr ""
+msgstr "Cloudflare"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.cloudflare-dns.family.lua:3
 msgid "Cloudflare (Family Protection)"
-msgstr ""
+msgstr "Cloudflare (Protecția familiei)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.cloudflare-dns.security.lua:3
 msgid "Cloudflare (Security Protection)"
-msgstr ""
+msgstr "Cloudflare (Protecție de securitate)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:122
 msgid "Configuration"
@@ -73,11 +73,11 @@ msgstr "Configurație"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.controld.freedns.malware-ads-social.lua:3
 msgid "ControlD (Block Malware + Ads + Social)"
-msgstr ""
+msgstr "ControlD (blochează programele malware + reclame + social)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.controld.freedns.malware-ads.lua:3
 msgid "ControlD (Block Malware + Ads)"
-msgstr ""
+msgstr "ControlD (blochează programele malware și reclamele)"
 
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.controld.freedns.malware.lua:3
 msgid "ControlD (Block Malware)"
@@ -196,7 +196,7 @@ msgstr ""
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:191
 msgid "Listen Port"
-msgstr ""
+msgstr "Port de ascultare"
 
 #: applications/luci-app-https-dns-proxy/luasrc/view/https-dns-proxy/js.htm:52
 msgid "Loading"

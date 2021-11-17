@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-12 18:41+0000\n"
+"PO-Revision-Date: 2021-11-16 17:38+0000\n"
 "Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdockerman/ro/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:604
 msgid "A list of kernel capabilities to add to the container"
-msgstr ""
+msgstr "O listă de capabilități de kernel care trebuie adăugate la container"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:183
 msgid "Add"
@@ -21,33 +21,36 @@ msgstr "Adaugă"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:580
 msgid "Add host device to the container"
-msgstr ""
+msgstr "Adăugați dispozitivul gazdă la container"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:556
 msgid "Advance"
-msgstr ""
+msgstr "Avansare"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:571
 msgid "Allocates an ephemeral host port for all of a container's exposed ports"
 msgstr ""
+"Alocă un port gazdă efemer pentru toate porturile expuse ale unui container"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:483
 msgid "Always pull image first"
-msgstr ""
+msgstr "Întotdeauna trageți mai întâi imaginea"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:23
 msgid ""
 "An overview with the relevant data is displayed here with which the LuCI "
 "docker client is connected."
 msgstr ""
+"Aici este afișată o imagine de ansamblu cu datele relevante cu care este "
+"conectat clientul docker LuCI."
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:27
 msgid "Api Version"
-msgstr ""
+msgstr "Versiunea Api"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:84
 msgid "Auto create macvlan interface in Openwrt"
-msgstr ""
+msgstr "Crearea automată a interfeței macvlan în Openwrt"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:64
 msgid "Available"
@@ -59,30 +62,34 @@ msgstr "Dispozitiv de bază"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:538
 msgid "Bind Mount(-v)"
-msgstr ""
+msgstr "Legătură Mount(-v)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:539
 msgid "Bind mount a volume"
-msgstr ""
+msgstr "Montarea unui volum"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:588
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:637
 msgid "Block IO Weight"
-msgstr ""
+msgstr "Bloc IO Greutate"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:638
 msgid ""
 "Block IO weight (relative weight) accepts a weight value between 10 and 1000"
 msgstr ""
+"Ponderea blocajului IO (pondere relativă) acceptă o valoare a ponderii între "
+"10 și 1000"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:589
 msgid ""
 "Block IO weight (relative weight) accepts a weight value between 10 and 1000."
 msgstr ""
+"Ponderea blocului IO (pondere relativă) acceptă o valoare a ponderii între "
+"10 și 1000."
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:51
 msgid "Bridge (Support direct communication between MAC VLANs)"
-msgstr ""
+msgstr "Bridge (Suportă comunicarea directă între MAC VLAN-uri)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:34
 msgid "Bridge device"
@@ -307,13 +314,13 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:14
 msgid "Download"
-msgstr ""
+msgstr "Descărcați"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:79
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:32
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/volumes.lua:85
 msgid "Driver"
-msgstr ""
+msgstr "Șofer"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:263
 msgid "Duplicate/Edit"
@@ -366,7 +373,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:6
 msgid "File"
-msgstr ""
+msgstr "Fișier"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:316
 msgid "Finish Time"
@@ -379,7 +386,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:85
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:96
 msgid "Gateway"
-msgstr "Gateway"
+msgstr "Poarta de acces"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:10
 msgid "Global settings"
@@ -511,7 +518,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:351
 msgid "Links"
-msgstr ""
+msgstr "Link-uri"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:512
 msgid "Links with other containers"
@@ -561,7 +568,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:47
 msgid "Mode"
-msgstr ""
+msgstr "Mod"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/volumes.lua:90
 msgid "Mount Point"
@@ -765,7 +772,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:226
 msgid "Save"
-msgstr ""
+msgstr "Salvați"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:518
 msgid "Set custom DNS servers"
@@ -796,7 +803,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:311
 msgid "Start Time"
-msgstr ""
+msgstr "Ora de începere"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:780
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:781
