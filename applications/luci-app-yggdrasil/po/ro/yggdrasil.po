@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"PO-Revision-Date: 2021-11-22 19:53+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsyggdrasil/ro/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/status.js:33
 msgid "Active peers"
@@ -99,8 +99,8 @@ msgid ""
 "\"Peers\" section instead."
 msgstr ""
 "Listă de șiruri de conexiuni pentru conexiunile de ieșire între omologi în "
-"format URI, aranjate în funcție de interfața sursă, de exemplu {\"eth0\": [ "
-"tcp://a.b.c.d:e ] }. Rețineți că conexiunile între omologi SOCKS NU vor fi "
+"format URI, aranjate în funcție de interfața sursă, de exemplu {\"eth0\": "
+"[ tcp://a.b.c.d:e ] }. Rețineți că conexiunile între omologi SOCKS NU vor fi "
 "afectate de această opțiune și ar trebui să fie incluse în secțiunea \"Peers"
 "\"."
 
@@ -138,26 +138,26 @@ msgstr ""
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:51
 msgid "Listen for beacons"
-msgstr ""
+msgstr "Ascultați balizele"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:31
 msgid "MTU size for the interface"
-msgstr ""
+msgstr "Dimensiunea MTU pentru interfață"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:44
 msgid "Multicast interface"
-msgstr ""
+msgstr "Interfața Multicast"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:23
 msgid "NodeInfo"
-msgstr ""
+msgstr "InfoNod"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:24
 msgid ""
 "Optional node info. This must be a { \"key\": \"value\", ... } map or set as "
 "null. This is entirely optional but, if set, is visible to the whole network "
 "on request."
-msgstr ""
+msgstr "Etichetarea DSCP."
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/peers.js:11
 #: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:23
@@ -166,11 +166,11 @@ msgstr "Perechi"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:49
 msgid "Regular expression"
-msgstr ""
+msgstr "Expresie regulată"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:50
 msgid "Send beacons"
-msgstr ""
+msgstr "Trimiteți balize"
 
 #: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:32
 msgid "Settings"
@@ -182,19 +182,19 @@ msgstr "Status"
 
 #: applications/luci-app-yggdrasil/root/usr/share/luci/menu.d/luci-app-yggdrasil.json:3
 msgid "Yggdrasil"
-msgstr ""
+msgstr "Yggdrasil"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/status.js:30
 msgid "Yggdrasil node status"
-msgstr ""
+msgstr "Starea nodului Yggdrasil"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:14
 msgid "Yggdrasil's network interface name"
-msgstr ""
+msgstr "Numele interfeței de rețea a lui Yggdrasil"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:40
 msgid "e.g. tcp://0.0.0.0:0 or tcp://[::]:0"
-msgstr ""
+msgstr "de exemplu, tcp://0.0.0.0:0 sau tcp://[::]:0"
 
 #~ msgid "Interface name"
 #~ msgstr "Numele interfeței"

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"PO-Revision-Date: 2021-11-20 21:48+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsvnstat2/ro/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/graphs.js:57
 msgid "5 Minute"
@@ -86,52 +86,61 @@ msgstr "Nu s-au găsit interfețe neconfigurate în baza de date."
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/graphs.js:55
 msgid "Summary"
-msgstr ""
+msgstr "Rezumat"
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/config.js:16
 msgid ""
 "The interface will be removed from the database permanently. This cannot be "
 "undone."
 msgstr ""
+"Interfața va fi eliminată definitiv din baza de date. Acest lucru nu poate "
+"fi anulat."
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/config.js:49
 msgid ""
 "The selected interfaces are automatically added to the vnStat database upon "
 "startup."
 msgstr ""
+"Interfețele selectate sunt adăugate automat în baza de date vnStat la "
+"pornire."
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/config.js:104
 msgid ""
 "These interfaces are present in the vnStat database, but are not configured "
 "above."
 msgstr ""
+"Aceste interfețe sunt prezente în baza de date vnStat, dar nu sunt "
+"configurate mai sus."
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/graphs.js:56
 msgid "Top"
-msgstr ""
+msgstr "Top"
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/config.js:102
 msgid "Unconfigured interfaces"
-msgstr ""
+msgstr "Interfețe neconfigurate"
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/graphs.js:61
 msgid "Yearly"
-msgstr ""
+msgstr "Anual"
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/config.js:43
 msgid "vnStat"
-msgstr ""
+msgstr "vnStat"
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/graphs.js:53
 msgid "vnStat Graphs"
-msgstr ""
+msgstr "Grafice vnStat"
 
 #: applications/luci-app-vnstat2/root/usr/share/luci/menu.d/luci-app-vnstat2.json:3
 msgid "vnStat Traffic Monitor"
-msgstr ""
+msgstr "vnStat Monitor de trafic"
 
 #: applications/luci-app-vnstat2/htdocs/luci-static/resources/view/vnstat2/config.js:43
 msgid ""
 "vnStat is a network traffic monitor for Linux that keeps a log of network "
 "traffic for the selected interface(s)."
 msgstr ""
+"vnStat este un monitor de trafic de rețea pentru Linux care păstrează un "
+"jurnal al traficului de rețea pentru interfața (interfețele) selectată "
+"(selectate)."

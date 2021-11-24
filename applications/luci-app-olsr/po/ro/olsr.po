@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"PO-Revision-Date: 2021-11-22 19:52+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsolsr/ro/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/mid.htm:13
 msgid "Active MID announcements"
@@ -105,13 +105,13 @@ msgstr "Link în jos"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/overview.htm:203
 msgid "Download Config"
-msgstr ""
+msgstr "Descărcați Config"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:57
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:109
 #: applications/luci-app-olsr/luasrc/view/status-olsr/topology.htm:26
 msgid "ETX"
-msgstr ""
+msgstr "ETX"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:140
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:365
@@ -130,6 +130,8 @@ msgid ""
 "Enable SmartGateway. If it is disabled, then all other SmartGateway "
 "parameters are ignored. Default is \"no\"."
 msgstr ""
+"Activați SmartGateway. Dacă este dezactivat, toți ceilalți parametri "
+"SmartGateway sunt ignorați. Valoarea implicită este \"nu\"."
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:36
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:36
@@ -143,12 +145,12 @@ msgstr "Activat"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/legend.htm:5
 msgid "Expected retransmission count"
-msgstr ""
+msgstr "Numărul de retransmisii preconizate"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:71
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:65
 msgid "FIB metric"
-msgstr ""
+msgstr "Metrică FIB"
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:72
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:66
@@ -160,11 +162,20 @@ msgid ""
 "value too, but does only update the hopcount if the nexthop changes too. "
 "Default is \"flat\"."
 msgstr ""
+"FIBMetric controlează valoarea metrică a seturilor de rute-gazdă OLSRd. "
+"\"flat\" înseamnă că valoarea metrică este întotdeauna 2. Aceasta este "
+"valoarea preferată, deoarece ajută nucleul Linux de rutare să curețe rutele "
+"mai vechi. \"correct\" utilizează numărul de salturi ca valoare metrică. "
+"\"approx\" utilizează hopcount-ul ca valoare metrică, dar actualizează "
+"hopcount-ul numai dacă se schimbă și hopcount-ul următor. Valoarea implicită "
+"este \"flat\"."
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd.lua:112
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrd6.lua:106
 msgid "Fisheye mechanism for TCs (checked means on). Default is \"on\""
 msgstr ""
+"Mecanismul Fisheye pentru TC-uri (bifat înseamnă activat). Valoarea "
+"implicită este \"on\""
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:55
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:107
@@ -187,7 +198,7 @@ msgstr "Setări generale"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/legend.htm:9
 msgid "Good (2 < ETX < 4)"
-msgstr ""
+msgstr "Bun (2 < ETX < 4)"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/legend.htm:18
 msgid "Good (30 > SNR > 20)"
@@ -896,7 +907,7 @@ msgstr ""
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/interfaces.htm:25
 msgid "State"
-msgstr ""
+msgstr "Stat"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/legend.htm:19
 msgid "Still usable (20 > SNR > 5)"

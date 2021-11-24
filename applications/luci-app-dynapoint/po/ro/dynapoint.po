@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"PO-Revision-Date: 2021-11-22 19:53+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdynapoint/ro/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:90
 msgid "Activate this wVIF if status is:"
@@ -96,11 +96,11 @@ msgstr "Nefolosit de DynaPoint"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:93
 msgid "Offline"
-msgstr ""
+msgstr "Dezactivat"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:92
 msgid "Online"
-msgstr ""
+msgstr "Online"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:87
 msgid "SSID"
@@ -108,40 +108,42 @@ msgstr "SSID"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:47
 msgid "Software Section"
-msgstr ""
+msgstr "Secțiunea Software"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:27
 msgid "Switch_to_offline threshold"
-msgstr ""
+msgstr "Pragul de trecere_la_offline"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:23
 msgid "Test-run interval"
-msgstr ""
+msgstr "Intervalul de execuție a testului"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:23
 msgid "Time interval in seconds to re-start a new test run"
 msgstr ""
+"Intervalul de timp, exprimat în secunde, pentru repornirea unei noi testări"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:36
 msgid "Use curl"
-msgstr ""
+msgstr "Utilizați curl"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:44
 msgid "Use curl instead of wget"
-msgstr ""
+msgstr "Folosiți curl în loc de wget"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:36
 msgid "Use curl instead of wget for testing the connectivity."
-msgstr ""
+msgstr "Utilizați curl în loc de wget pentru a testa conectivitatea."
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:39
 msgid "Used interface"
-msgstr ""
+msgstr "Interfață utilizată"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:39
 msgid "Which interface should curl use. (Use ifconfig to find out)"
 msgstr ""
+"Ce interfață ar trebui să folosească curl. (Utilizați ifconfig pentru a afla)"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:61
 msgid "WiFi Status"
-msgstr ""
+msgstr "Starea WiFi"

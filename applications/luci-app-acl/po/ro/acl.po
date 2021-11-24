@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"PO-Revision-Date: 2021-11-20 21:48+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsacl/ro/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: applications/luci-app-acl/root/usr/share/luci/menu.d/luci-app-acl.json:3
 msgid "ACL Settings"
@@ -90,34 +90,34 @@ msgstr "Contul de sistem pentru a utiliza parola de la"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:232
 msgid "UNIX account"
-msgstr ""
+msgstr "Cont UNIX"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:281
 msgid "Unable to encrypt plaintext password: %s"
-msgstr ""
+msgstr "Nu se poate cripta parola în clar: %s"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:220
 msgid "Use UNIX password in /etc/shadow"
-msgstr ""
+msgstr "Utilizați parola UNIX în /etc/shadow"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:221
 msgid "Use encrypted password hash"
-msgstr ""
+msgstr "Utilizați parola criptată hash"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:299
 msgid "Write access"
-msgstr ""
+msgstr "Disciplina cozii"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:67
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:89
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:110
 msgctxt "No permissions granted"
 msgid "denied"
-msgstr ""
+msgstr "refuzat"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:293
 msgid "does not expire"
-msgstr ""
+msgstr "nu expiră"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:63
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:95
@@ -125,21 +125,21 @@ msgstr ""
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:304
 msgctxt "All permissions granted"
 msgid "full"
-msgstr ""
+msgstr "complet"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:306
 msgctxt "Select individual permissions manually"
 msgid "individual"
-msgstr ""
+msgstr "individuală"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:65
 msgctxt "Some permissions granted"
 msgid "partial (%d/%d)"
-msgstr ""
+msgstr "parțial (%d/%d)"
 
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:92
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:111
 #: applications/luci-app-acl/htdocs/luci-static/resources/view/system/acl.js:305
 msgctxt "Only read permissions granted"
 msgid "readonly"
-msgstr ""
+msgstr "numaipentrucitire"

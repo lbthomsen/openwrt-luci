@@ -151,6 +151,9 @@ return network.registerProtocol('wireguard', {
 			]);
 		};
 
+		o = ss.option(form.Flag, 'disabled', _('Peer disabled'), _('Enable / Disable peer. Restart wireguard interface to apply changes.'));
+		o.optional = true;
+
 		o = ss.option(form.Value, 'description', _('Description'), _('Optional. Description of peer.'));
 		o.placeholder = 'My Peer';
 		o.datatype = 'string';
@@ -188,6 +191,7 @@ return network.registerProtocol('wireguard', {
 			return E('div', { 'class': 'cbi-value' }, [
 				E('label', { 'class': 'cbi-value-title' }, _('QR-Code')),
 				E('div', {
+					'class': 'cbi-value-field',
 					'style': 'display: flex; flex-direction: column; align-items: baseline;',
 					'id': 'qr-' + section_id
 				}, [

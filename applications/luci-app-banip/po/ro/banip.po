@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:37+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-22 19:53+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/ro/>\n"
 "Language: ro\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:710
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:718
@@ -97,15 +97,15 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:344
 msgid "Advanced Chain Settings"
-msgstr ""
+msgstr "Setări avansate ale lanțului"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:346
 msgid "Advanced E-Mail Settings"
-msgstr ""
+msgstr "Setări avansate de e-mail"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:345
 msgid "Advanced Log Settings"
-msgstr ""
+msgstr "Setări avansate de jurnal"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:589
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:637
@@ -113,6 +113,8 @@ msgid ""
 "Assign one or more relevant firewall chains to banIP. The default chain used "
 "by banIP is 'forwarding_lan_rule'."
 msgstr ""
+"Atribuiți unul sau mai multe lanțuri de firewall relevante pentru banIP. "
+"Lanțul implicit utilizat de banIP este 'forwarding_lan_rule'."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:611
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:659
@@ -120,6 +122,8 @@ msgid ""
 "Assign one or more relevant firewall chains to banIP. The default chain used "
 "by banIP is 'forwarding_wan_rule'."
 msgstr ""
+"Atribuiți unul sau mai multe lanțuri de firewall relevante pentru banIP. "
+"Lanțul implicit utilizat de banIP este 'forwarding_wan_rule'."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:578
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:626
@@ -127,6 +131,8 @@ msgid ""
 "Assign one or more relevant firewall chains to banIP. The default chain used "
 "by banIP is 'input_lan_rule'."
 msgstr ""
+"Atribuiți unul sau mai multe lanțuri de firewall relevante pentru banIP. "
+"Lanțul implicit utilizat de banIP este 'input_lan_rule'."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:600
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:648
@@ -134,29 +140,34 @@ msgid ""
 "Assign one or more relevant firewall chains to banIP. The default chain used "
 "by banIP is 'input_wan_rule'."
 msgstr ""
+"Atribuiți unul sau mai multe lanțuri de firewall relevante pentru banIP. "
+"Lanțul implicit utilizat de banIP este \"input_wan_rule\"."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:810
 msgid "Auto Blacklist"
-msgstr ""
+msgstr "Lista neagră automată"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:360
 msgid "Auto Detection"
-msgstr ""
+msgstr "Detecție automată"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:813
 msgid "Auto Whitelist"
-msgstr ""
+msgstr "Lista albă automată"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:810
 msgid ""
 "Automatically transfers suspicious IPs from the log to the banIP blacklist "
 "during runtime."
 msgstr ""
+"Transferă automat IP-uri suspecte din jurnal în lista neagră banIP în timpul "
+"execuției."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:813
 msgid ""
 "Automatically transfers uplink IPs to the banIP whitelist during runtime."
 msgstr ""
+"Transferă automat IP-urile uplink în lista albă banIP în timpul execuției."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:439
 msgid "Backup Directory"
@@ -164,15 +175,17 @@ msgstr "Director copie de siguranţă"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:435
 msgid "Base Temp Directory"
-msgstr ""
+msgstr "Directorul Temp de bază"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:435
 msgid "Base Temp Directory used for all banIP related runtime operations."
 msgstr ""
+"Directorul Temp de bază utilizat pentru toate operațiunile de execuție "
+"legate de banIP."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:508
 msgid "Blacklist Timeout"
-msgstr ""
+msgstr "Lista neagră Timeout"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blacklist.js:15
 msgid ""

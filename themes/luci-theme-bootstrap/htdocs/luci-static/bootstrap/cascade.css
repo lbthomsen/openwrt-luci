@@ -502,11 +502,6 @@ pre {
 /* Forms.less
  * Base styles for various input types, form layouts, and states
  * ------------------------------------------------------------- */
-form,
-.cbi-value {
-	margin-bottom: 18px;
-}
-
 fieldset {
 	margin-bottom: 9px;
 	padding-top: 9px;
@@ -520,11 +515,6 @@ fieldset legend {
 	padding-top: 20px;
 }
 
-form .cbi-tab-descr {
-	line-height: 18px;
-	margin-bottom: 18px;
-}
-
 label,
 input,
 button,
@@ -536,19 +526,28 @@ textarea {
 	line-height: normal;
 }
 
-form .input,
+.cbi-value {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 18px;
+}
+
 .cbi-value-field {
-	margin-left: 200px;
+	margin-left: 20px;
+	flex: 1;
 }
 
 .cbi-value label.cbi-value-title {
 	padding-top: 6px;
 	font-size: 13px;
 	line-height: 18px;
-	float: left;
-	width: 180px;
+	flex: 0 0 180px;
 	text-align: right;
 	color: var(--text-color-high);
+}
+
+.cbi-value > .cbi-tblsection {
+	width: 100%;
 }
 
 label > input[type="checkbox"],
@@ -1243,8 +1242,8 @@ a.menu:after {
 	font-weight: bold;
 }
 
-.cbi-tabcontainer > fieldset.cbi-section[id] > legend {
-	display: none;
+.cbi-tab-descr {
+	margin: -9px 0 18px 0;
 }
 
 .tabs .menu-dropdown, .tabs .dropdown-menu {
@@ -1332,7 +1331,7 @@ footer ul.breadcrumb {
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.7);
 	z-index: 900;
-	overflow: scroll;
+	overflow: auto;
 	transition: opacity .125s ease-in;
 	opacity: 0;
 	visibility: hidden;
@@ -1774,7 +1773,7 @@ select + .cbi-button,
 	height: 100%;
 	transition: width .25s ease-in;
 	width: 0%;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 .cbi-progressbar::before {
@@ -2023,6 +2022,7 @@ table table td,
 .td.cbi-section-actions {
 	text-align: right;
 	vertical-align: middle;
+	width: 15%;
 }
 
 .td.cbi-section-actions > * {
@@ -2103,7 +2103,7 @@ table table td,
 
 .ifacebox .ifacebox-head {
 	border-bottom: 1px solid var(--border-color-high);
-	border-radius: 4px 4px 0 0;
+	border-radius: 3px 3px 0 0;
 	padding: 2px;
 	background: #eee;
 	color: var(--text-color-high);
@@ -2280,34 +2280,34 @@ div.cbi-value var.cbi-tooltip-container,
 	white-space: pre;
 }
 
-.uci-change-dialog div > del,
-.uci-change-dialog div > ins,
-.uci-change-dialog div > var {
+.uci-dialog div > del,
+.uci-dialog div > ins,
+.uci-dialog div > var {
 	margin-bottom: 2px;
-	border: 1px solid hsla(var(--border-color-high-hsl), .6);
+	border: 1px solid var(--border-color-high);
 	line-height: 15px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	padding: 2px;
 	position: relative;
-	background-color: hsla(var(--background-color-low-hsl), .3);
+	background-color: var(--background-color-low);
 }
 
-.uci-change-dialog div > ins {
+.uci-dialog div > ins {
 	background-color: rgba(var(--success-color-high-rgb), .3);
 	border-color: rgba(var(--success-color-high-rgb), .6);
 }
 
-.uci-change-dialog div > del {
+.uci-dialog div > del {
 	background-color: rgba(var(--error-color-high-rgb), .3);
 	border-color: rgba(var(--error-color-high-rgb), .6);
 }
 
-.uci-change-dialog var > ins {
+.uci-dialog var > ins {
 	background-color: rgba(var(--success-color-high-rgb), .3);
 }
 
-.uci-change-dialog var > del {
+.uci-dialog var > del {
 	background-color: rgba(var(--error-color-high-rgb), .3);
 }
 
@@ -2316,9 +2316,9 @@ div.cbi-value var.cbi-tooltip-container,
 	text-overflow: ellipsis;
 }
 
-.uci-change-dialog del,
-.uci-change-dialog ins,
-.uci-change-dialog var {
+.uci-dialog del,
+.uci-dialog ins,
+.uci-dialog var {
 	text-decoration: none;
 	font-family: monospace;
 	font-style: normal;
@@ -2354,10 +2354,6 @@ div.cbi-value var.cbi-tooltip-container,
 
 #applyreboot-section {
 	line-height: 300%;
-}
-
-[data-page="admin-network-dhcp"] [data-name="ip"] {
-	width: 15%;
 }
 
 @keyframes flash {

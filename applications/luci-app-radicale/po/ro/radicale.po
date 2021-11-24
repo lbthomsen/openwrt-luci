@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:38+0000\n"
+"PO-Revision-Date: 2021-11-22 19:53+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsradicale/ro/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:268
 msgid ""
@@ -110,6 +110,10 @@ msgid ""
 "resources (e.g. fonts, JavaScript, etc.) on a web page to be requested from "
 "another domain outside the domain from which the resource originated."
 msgstr ""
+"Partajarea resurselor de origine încrucișată (CORS) este un mecanism care "
+"permite ca resursele restricționate (de exemplu, fonturi, JavaScript etc.) "
+"de pe o pagină web să fie solicitate de pe un alt domeniu în afara "
+"domeniului din care provine resursa."
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:548
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:570
@@ -120,51 +124,55 @@ msgstr "Depanare"
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:191
 msgid "Delay (in seconds) during system boot before Radicale start"
 msgstr ""
+"Întârziere (în secunde) în timpul pornirii sistemului înainte de pornirea "
+"Radicale"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:508
 msgid "Directory"
-msgstr ""
+msgstr "Director"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:524
 msgid "Directory not exists/found !"
-msgstr ""
+msgstr "Directorul nu există/nu a fost găsit!"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:527
 msgid "Directory required !"
-msgstr ""
+msgstr "Director necesar !"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:611
 msgid "Directory where the rotating log-files are stored"
-msgstr ""
+msgstr "Directorul în care sunt stocate fișierele jurnal rotative"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:193
 msgid "During delay ifup-events are not monitored !"
-msgstr ""
+msgstr "În timpul întârzierii ifup-evenimentele nu sunt monitorizate !"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:251
 msgid "Enable HTTPS"
-msgstr ""
+msgstr "Activați HTTPS"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:174
 msgid ""
 "Enable/Disable auto-start of Radicale on system start-up and interface events"
 msgstr ""
+"Activarea/Dezactivarea pornirii automate a Radicale la pornirea sistemului "
+"și la evenimentele de interfață"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:676
 msgid "Encoding"
-msgstr ""
+msgstr "Codificare"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:689
 msgid "Encoding for responding requests."
-msgstr ""
+msgstr "Codificarea pentru cererile de răspuns."
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:698
 msgid "Encoding for storing local collections."
-msgstr ""
+msgstr "Codificare pentru stocarea colecțiilor locale."
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:385
 msgid "Encryption method"
-msgstr ""
+msgstr "Metoda de criptare"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:551
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:573
@@ -271,7 +279,7 @@ msgstr ""
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:356
 msgid "None"
-msgstr ""
+msgstr "Nici unul"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:654
 msgid "Number of backup files of log to create."

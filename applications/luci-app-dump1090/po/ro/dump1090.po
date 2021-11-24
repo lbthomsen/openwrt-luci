@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"PO-Revision-Date: 2021-11-22 19:53+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdump1090/ro/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:123
 msgid "Absolute maximum range for position decoding"
@@ -88,7 +88,7 @@ msgstr "Activați îmbunătățirea fazei"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:127
 msgid "Enable single-bits error correction using CRC"
-msgstr ""
+msgstr "Activați corecția erorilor pe un singur bit utilizând CRC"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:10
 msgid "Enabled"
@@ -96,55 +96,55 @@ msgstr "Activat"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:89
 msgid "FlightAware TSV output port"
-msgstr ""
+msgstr "Port de ieșire TSV FlightAware"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:30
 msgid "Frequency"
-msgstr ""
+msgstr "Frecvență"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:23
 msgid "Gain (-10 for auto-gain)"
-msgstr ""
+msgstr "Gain (-10 pentru auto-gain)"
 
 #: applications/luci-app-dump1090/root/usr/share/rpcd/acl.d/luci-app-dump1090.json:3
 msgid "Grant UCI access for luci-app-dump1090"
-msgstr ""
+msgstr "Acordă acces UCI pentru luci-app-dump1090"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:65
 msgid "HTTP server port"
-msgstr ""
+msgstr "Portul serverului HTTP"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:61
 msgid "IP address to bind to"
-msgstr ""
+msgstr "Adresa IP la care se face legătura"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:196
 msgid "Measure noise power"
-msgstr ""
+msgstr "Măsurați puterea de zgomot"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:139
 msgid "More CPU for more messages"
-msgstr ""
+msgstr "Mai multe CPU pentru mai multe mesaje"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:176
 msgid "Periodically write json output to a directory"
-msgstr ""
+msgstr "Scrieți periodic ieșirea json într-un director"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:145
 msgid "Print stats at exit"
-msgstr ""
+msgstr "Imprimă statisticile la ieșire"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:19
 msgid "RTL device index"
-msgstr ""
+msgstr "Indicele dispozitivului RTL"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:115
 msgid "Reference/receiver latitude for surface posn"
-msgstr ""
+msgstr "Latitudine de referință/receptor pentru poziția la suprafață"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:119
 msgid "Reference/receiver longitude for surface posn"
-msgstr ""
+msgstr "Longitudine de referință/receptor pentru poziția la suprafață"
 
 #: applications/luci-app-dump1090/luasrc/model/cbi/dump1090.lua:16
 msgid "Respawn"

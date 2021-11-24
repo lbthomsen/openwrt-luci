@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:38+0000\n"
-"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
+"PO-Revision-Date: 2021-11-22 19:53+0000\n"
+"Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsunbound/ro/>\n"
 "Language: ro\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:160
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:53
@@ -74,7 +74,8 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:52
 msgid "Check for local program to allow forward to localhost"
-msgstr "Verificați dacă programul local permite redirecționarea către localhost"
+msgstr ""
+"Verificați dacă programul local permite redirecționarea către localhost"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:84
 msgid "Choose Unbounds listening port"
@@ -86,39 +87,39 @@ msgstr "Alegeți versiunile IP utilizate în upstream și downstream"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:64
 msgid "Connect to servers using TLS"
-msgstr ""
+msgstr "Conectarea la servere utilizând TLS"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:48
 msgid "DHCP"
-msgstr ""
+msgstr "DHCP"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:158
 msgid "DHCP Link"
-msgstr ""
+msgstr "Legătura DHCP"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:166
 msgid "DHCPv4 to SLAAC"
-msgstr ""
+msgstr "DHCPv4 la SLAAC"
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:57
 msgid "DNS Cache"
-msgstr ""
+msgstr "Memoria cache DNS"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:51
 msgid "DNS Plugin"
-msgstr ""
+msgstr "Plugin DNS"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:63
 msgid "DNS over TLS"
-msgstr ""
+msgstr "DNS prin TLS"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:107
 msgid "DNS64 Prefix"
-msgstr ""
+msgstr "Prefixul DNS64"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:77
 msgid "DNSSEC NTP Fix"
-msgstr ""
+msgstr "Fixare DNSSEC NTP"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:239
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:250
@@ -128,27 +129,27 @@ msgstr "Implicită"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:181
 msgid "Denied (nxdomain)"
-msgstr ""
+msgstr "Refuzat (nxdomain)"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:22
 msgid "Directed Zone"
-msgstr ""
+msgstr "Zona dirijată"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:85
 msgid "Directory only part of URL"
-msgstr ""
+msgstr "Director doar o parte din URL"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:115
 msgid "Domain Insecure"
-msgstr ""
+msgstr "Domeniu nesigur"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:80
 msgid "Domain name to verify TLS certificate"
-msgstr ""
+msgstr "Nume de domeniu pentru verificarea certificatului TLS"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:173
 msgid "Domain suffix for this router and DHCP clients"
-msgstr ""
+msgstr "Sufix de domeniu pentru acest router și clienții DHCP"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:279
 msgid "EDNS Size"
@@ -424,7 +425,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:42
 msgid "Log"
-msgstr ""
+msgstr "Jurnal"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:58
 msgid "Manual Conf"
