@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-16 17:37+0000\n"
+"PO-Revision-Date: 2021-11-22 19:53+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsattendedsysupgrade/ro/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:15
 msgid "Address"
@@ -89,47 +89,47 @@ msgstr "Fișier"
 
 #: applications/luci-app-attendedsysupgrade/root/usr/share/rpcd/acl.d/luci-app-attendedsysupgrade.json:3
 msgid "Grant UCI access to LuCI app attendedsysupgrade"
-msgstr ""
+msgstr "Acordarea accesului UCI la aplicația LuCI attendedsysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:211
 msgid "Install Sysupgrade"
-msgstr ""
+msgstr "Instalați Sysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:100
 msgid "Installing the sysupgrade. Do not unpower device!"
-msgstr ""
+msgstr "Instalarea sysupgrade. Nu deconectați dispozitivul!"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:192
 msgid "Keep settings and retain the current configuration"
-msgstr ""
+msgstr "Păstrați setările și păstrați configurația curentă"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:359
 msgid "New upgrade available"
-msgstr ""
+msgstr "Noul upgrade disponibil"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:384
 msgid "No upgrade available"
-msgstr ""
+msgstr "Niciun upgrade disponibil"
 
 #: applications/luci-app-attendedsysupgrade/root/usr/share/luci/menu.d/luci-app-attendedsysupgrade.json:15
 msgid "Overview"
-msgstr ""
+msgstr "Prezentare generală"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:239
 msgid "Please report the error message and request"
-msgstr ""
+msgstr "Vă rugăm să raportați mesajul de eroare și să solicitați"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:379
 msgid "Request Sysupgrade"
-msgstr ""
+msgstr "Solicitați Sysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:225
 msgid "Request in build queue position %s"
-msgstr ""
+msgstr "Cerere aflată în coada de așteptare în poziția %s"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:240
 msgid "Request to server:"
-msgstr ""
+msgstr "Cerere către server:"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:155
 msgid "SHA256"
@@ -137,19 +137,19 @@ msgstr "SHA256"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:22
 msgid "Search for new sysupgrades on opening the tab"
-msgstr ""
+msgstr "Căutați noi sysupgrades la deschiderea filei"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:448
 msgid "Search for sysupgrade"
-msgstr ""
+msgstr "Căutați sysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:21
 msgid "Search on opening"
-msgstr ""
+msgstr "Căutare la deschidere"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:282
 msgid "Searching for an available sysupgrade of %s - %s"
-msgstr ""
+msgstr "Căutarea unui sysupgrade disponibil de %s - %s"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:12
 msgid "Server"
