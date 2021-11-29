@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-22 19:53+0000\n"
+"PO-Revision-Date: 2021-11-28 17:27+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsclamav/ro/>\n"
@@ -162,19 +162,19 @@ msgstr "Scanarea mesajelor RFC1341 împărțite în mai multe e-mailuri"
 
 #: applications/luci-app-clamav/luasrc/model/cbi/clamav.lua:118
 msgid "Scan archives"
-msgstr ""
+msgstr "Scanați arhivele"
 
 #: applications/luci-app-clamav/luasrc/model/cbi/clamav.lua:108
 msgid "Scan emails"
-msgstr ""
+msgstr "Scanați e-mailurile"
 
 #: applications/luci-app-clamav/luasrc/model/cbi/clamav.lua:98
 msgid "Scan pdf files"
-msgstr ""
+msgstr "Scanarea fișierelor pdf"
 
 #: applications/luci-app-clamav/luasrc/model/cbi/clamav.lua:78
 msgid "Scan portable executables"
-msgstr ""
+msgstr "Scanarea executabilelor portabile"
 
 #: applications/luci-app-clamav/luasrc/model/cbi/clamav.lua:103
 msgid "Scan swf files"
