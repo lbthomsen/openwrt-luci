@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-22 19:53+0000\n"
+"PO-Revision-Date: 2021-11-28 17:27+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmjpg-streamer/ro/>\n"
@@ -150,7 +150,7 @@ msgstr "Pornit"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:20
 msgid "Output plugin"
-msgstr ""
+msgstr "Plugin de ieșire"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:102
 msgid "Password"
@@ -158,7 +158,7 @@ msgstr "Parolă"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:29
 msgid "Plugin settings"
-msgstr ""
+msgstr "Setări Plugin"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:91
 msgid "Port"
