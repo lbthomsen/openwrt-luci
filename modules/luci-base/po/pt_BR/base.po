@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:41+0200\n"
-"PO-Revision-Date: 2021-11-27 23:39+0000\n"
+"PO-Revision-Date: 2021-11-30 13:10+0000\n"
 "Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luci/pt_BR/>\n"
@@ -1966,7 +1966,7 @@ msgid "Disassociate On Low Acknowledgement"
 msgstr "Desassocie quando houver baixa confirmação de recebimento"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:302
-msgid "Discard upstream RFC1918 responses."
+msgid "Discard upstream responses containing <a href="%s">RFC1918</a> addresses."
 msgstr ""
 "Descartar respostas dos servidores externos para redes privadas (RFC1918)."
 
@@ -1986,7 +1986,7 @@ msgstr "A tentativa de desconexão falhou"
 msgid "Disconnection attempt failed."
 msgstr "A tentativa de desconexão falhou."
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_diskfree.js:35
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_storage.js:35
 msgid "Disk space"
 msgstr "Espaço no disco"
 
@@ -6737,7 +6737,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:210
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:37
 msgid "Short GI"
-msgstr "Intervalo de guarda curto"
+msgstr "GI curto"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1158
 msgid "Short Preamble"
@@ -7279,8 +7279,8 @@ msgstr "Pare o WPS"
 msgid "Stop refresh"
 msgstr "Parar atualização"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_diskfree.js:24
-msgid "Storage usage"
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_storage.js:24
+msgid "Storage"
 msgstr "Uso do armazenamento"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:629
@@ -7437,7 +7437,7 @@ msgstr "Plataforma alvo"
 msgid "Target network"
 msgstr "Rede de destino"
 
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_diskfree.js:36
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_storage.js:36
 msgid "Temp space"
 msgstr "Espaço temporário"
 
