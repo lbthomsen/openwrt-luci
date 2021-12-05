@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-01 15:03+0000\n"
+"PO-Revision-Date: 2021-12-03 17:34+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnlbwmon/ro/>\n"
@@ -295,15 +295,15 @@ msgstr "Nu s-a reușit descărcarea datelor de trafic: %s"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/backup.js:28
 msgid "Failed to restore backup archive: %s"
-msgstr ""
+msgstr "Nu s-a reușit restaurarea arhivei de rezervă: %s"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:929
 msgid "Family"
-msgstr ""
+msgstr "Familie"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/config.js:73
 msgid "Fixed interval"
-msgstr ""
+msgstr "Interval fix"
 
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:852
 #: applications/luci-app-nlbwmon/htdocs/luci-static/resources/view/nlbw/display.js:898
