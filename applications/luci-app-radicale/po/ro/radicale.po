@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-07 20:27+0000\n"
+"PO-Revision-Date: 2021-12-10 15:48+0000\n"
 "Last-Translator: Simona Iacob <s@zp1.net>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsradicale/ro/>\n"
@@ -262,7 +262,7 @@ msgstr "Dimensiunea fișierului-jurnal"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:533
 msgid "Logging"
-msgstr "Înregistrare"
+msgstr "Jurnalizare"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:235
 msgid "Logon message"
@@ -423,23 +423,23 @@ msgstr "Pornire / Oprire"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:156
 msgid "Start/Stop Radicale server"
-msgstr ""
+msgstr "Porniți/opriți serverul Radicale"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:473
 msgid "Storage"
-msgstr ""
+msgstr "Depozitare"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:697
 msgid "Storage Encoding"
-msgstr ""
+msgstr "Codificarea stocării"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:484
 msgid "Storage backend"
-msgstr ""
+msgstr "Backend de stocare"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:566
 msgid "Syslog Log level"
-msgstr ""
+msgstr "Syslog Nivelul de jurnal"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:141
 msgid "System"
@@ -450,21 +450,25 @@ msgid ""
 "The Radicale Project is a complete CalDAV (calendar) and CardDAV (contact) "
 "server solution."
 msgstr ""
+"Proiectul Radicale este o soluție completă de server CalDAV (calendar) și "
+"CardDAV (contact)."
 
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:34
 msgid ""
 "They can be viewed and edited by calendar and contact clients on mobile "
 "phones or computers."
 msgstr ""
+"Acestea pot fi vizualizate și editate de către clienții cu calendare și "
+"contacte de pe telefoane mobile sau computere."
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:408
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:463
 msgid "To edit the file follow this link!"
-msgstr ""
+msgstr "Pentru a edita fișierul urmați acest link!"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:615
 msgid "To view latest log file follow this link!"
-msgstr ""
+msgstr "Pentru a vizualiza cel mai recent fișier jurnal urmați acest link!"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:201
 msgid "Value is not a number"
@@ -473,7 +477,7 @@ msgstr "Valoarea nu este un număr"
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:644
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:667
 msgid "Value is not an Integer >= 0 !"
-msgstr ""
+msgstr "Valoarea nu este un număr întreg >= 0 !"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:203
 msgid "Value not between 0 and 300"
@@ -482,7 +486,7 @@ msgstr "Valoarea nu este cuprinsă între 0 și 300"
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:647
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:670
 msgid "Value required ! Integer >= 0 !"
-msgstr ""
+msgstr "Valoare necesară ! Număr întreg >= 0 !"
 
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:40
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:42
@@ -492,12 +496,14 @@ msgstr "Versiunea"
 
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:38
 msgid "Version Information"
-msgstr ""
+msgstr "Informații despre versiune"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:485
 msgid ""
 "WARNING: Only 'File-system' is documented and tested by Radicale development"
 msgstr ""
+"AVERTISMENT: Doar 'File-system' este documentat și testat de Radicale "
+"development"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:550
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:572
@@ -510,45 +516,49 @@ msgid ""
 "You can also get groups from the user regex in the collection with {0}, {1}, "
 "etc."
 msgstr ""
+"De asemenea, puteți obține grupuri din regexul utilizatorului în colecție cu "
+"{0}, {1}, etc."
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:89
 msgid ""
 "You can use Python's ConfigParser interpolation values %(login)s and "
 "%(path)s."
 msgstr ""
+"Puteți utiliza valorile de interpolare %(login)s și %(path)s ale "
+"ConfigParser din Python."
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:390
 msgid "crypt"
-msgstr ""
+msgstr "criptare"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:357
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:400
 msgid "htpasswd file"
-msgstr ""
+msgstr "fișier htpasswd"
 
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:44
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:73
 msgid "installed"
-msgstr ""
+msgstr "instalat"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:623
 msgid "no valid path given!"
-msgstr ""
+msgstr "nu a fost indicată nicio cale validă!"
 
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:43
 msgid "or higher"
-msgstr ""
+msgstr "sau mai mare"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:391
 msgid "plain"
-msgstr ""
+msgstr "simplu"
 
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:41
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:64
 #: applications/luci-app-radicale/luasrc/controller/radicale.lua:75
 msgid "required"
-msgstr ""
+msgstr "necesară"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:393
 msgid "salted SHA-1"
-msgstr ""
+msgstr "Salted SHA-1"
