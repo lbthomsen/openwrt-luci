@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2021-08-18 10:44+0000\n"
+"PO-Revision-Date: 2022-03-04 19:06+0000\n"
 "Last-Translator: Hulen <shift0106@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsstatistics/zh_Hant/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -123,7 +123,7 @@ msgstr "將插座檔的所有權變更為指定的群組。"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/chrony.js:8
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/chrony.json:2
 msgid "Chrony"
-msgstr "Chrony"
+msgstr "Chrony 系統校時"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:6
 msgid "Chrony Plugin Configuration"
@@ -914,7 +914,7 @@ msgstr "插件已停用"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:18
 msgid "Port"
-msgstr "通訊埠"
+msgstr "連接埠"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:19
 msgid "Port for apcupsd communication"
@@ -1512,10 +1512,9 @@ msgstr "詳細監視"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ping.js:37
 msgid ""
 "When a host has not replied to this number of packets in a row, re-resolve "
-"the hostname in DNS. Useful for dynamic DNS hosts."
-msgstr ""
-"當主機連著對指定數目的資料封包無回應，在 DNS 中重新解析主機名稱。對動態 DNS "
-"主機有用。"
+"the hostname in DNS. Useful for dynamic DNS hosts. Default is -1 = disabled."
+msgstr "當主機接連未回應這個數量的資料封包時，在 DNS 中重新解析主機名稱。對動態 DNS "
+"主機有用。預設值是 -1 =停用。"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/disk.js:16
 msgid "When none selected, all disks will be monitored."
@@ -1602,6 +1601,13 @@ msgstr[0] "%d 遠端阜"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "減少 rrd 大小"
+
+#~ msgid ""
+#~ "When a host has not replied to this number of packets in a row, re-"
+#~ "resolve the hostname in DNS. Useful for dynamic DNS hosts."
+#~ msgstr ""
+#~ "當主機連著對指定數目的資料封包無回應，在 DNS 中重新解析主機名稱。對動態 "
+#~ "DNS 主機有用。"
 
 #~ msgid "Cache flush interval"
 #~ msgstr "快取清空間隙"

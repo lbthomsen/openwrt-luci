@@ -149,9 +149,10 @@ return view.extend({
 			var config_name = this.uciconfig || this.map.config,
 			    section_id = uci.add(config_name, this.sectiontype);
 
+			uci.set(config_name, section_id, 'dest', 'lan');
 			uci.set(config_name, section_id, 'target', 'DNAT');
 
-			this.addedSection = section_id;
+			m.addedSection = section_id;
 			this.renderMoreOptionsModal(section_id);
 		};
 
@@ -229,7 +230,6 @@ return view.extend({
 		o.modalonly = true;
 		o.rmempty = true;
 		o.nocreate = true;
-		o.default = 'lan';
 
 		o = fwtool.addIPOption(s, 'general', 'dest_ip', _('Internal IP address'),
 			_('Redirect matched incoming traffic to the specified internal host'), 'ipv4', hosts);
@@ -281,10 +281,12 @@ return view.extend({
 		fwtool.addLimitOption(s);
 		fwtool.addLimitBurstOption(s);
 
-		o = s.taboption('advanced', form.Value, 'extra', _('Extra arguments'),
-			_('Passes additional arguments to iptables. Use with care!'));
-		o.modalonly = true;
-		o.rmempty = true;
+		if (!L.hasSystemFeature('firewall4')) {
+			o = s.taboption('advanced', form.Value, 'extra', _('Extra arguments'),
+				_('Passes additional arguments to iptables. Use with care!'));
+			o.modalonly = true;
+			o.rmempty = true;
+		}
 
 		return m.render();
 	}

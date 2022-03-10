@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-11-15 17:49+0000\n"
+"PO-Revision-Date: 2022-02-07 22:09+0000\n"
 "Last-Translator: drax red <drax@outlook.dk>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsuhttpd/da/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:135
 msgid ""
@@ -60,7 +60,7 @@ msgstr "Konfigurationsfil (f.eks. for legitimationsoplysninger til Basic Auth)"
 msgid "Connection reuse"
 msgstr "Genbrug af forbindelse"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:229
 msgid "Country"
 msgstr "Land"
 
@@ -130,6 +130,10 @@ msgstr "HTTPS privat nøgle (DER- eller PEM-format)"
 msgid "HTTPS listener (address:port)"
 msgstr "HTTPS-lytter (adresse:port)"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+msgid "If empty, a random/unique value is used in cert generation"
+msgstr "Hvis tom, bruges en tilfældig/unik værdi i certgenerering"
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:90
 msgid "Ignore private IPs on public interface"
 msgstr "Ignorer private IP'er på offentlig interface"
@@ -150,7 +154,7 @@ msgstr ""
 msgid "Length of key in bits"
 msgstr "Nøglens længde i bits"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:227
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:223
 msgid "Location"
 msgstr "Lokation"
 
@@ -169,6 +173,10 @@ msgstr "Maksimal ventetid for udførelse af Lua, CGI eller ubus"
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:182
 msgid "Maximum wait time for network activity"
 msgstr "Maksimal ventetid på netværksaktivitet"
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+msgid "Organization"
+msgstr "Organisation"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:166
 msgid "Override path for ubus socket"
@@ -213,7 +221,7 @@ msgstr ""
 "Indstillinger, som enten sjældent er nødvendige, eller som påvirker "
 "betjeningen af WebUI"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:224
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:226
 msgid "State"
 msgstr "State"
 
