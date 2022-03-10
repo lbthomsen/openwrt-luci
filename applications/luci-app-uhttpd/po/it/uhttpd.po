@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-09-20 20:55+0000\n"
+"PO-Revision-Date: 2022-02-18 20:18+0000\n"
 "Last-Translator: pisquan8 <cimurro@outlook.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsuhttpd/it/>\n"
@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:135
 msgid ""
 "(/old/path=/new/path) or (just /old/path which becomes /cgi-prefix/old/path)"
 msgstr ""
-"(/vecchio/percorso=/nuovo/percorso) o (solo /vecchio/percorso che diventa "
-"/cgi-prefix/vecchio/percorso)"
+"(/vecchio/percorso=/nuovo/percorso) o (solo /vecchio/percorso che diventa /"
+"cgi-prefix/vecchio/percorso)"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:145
 msgid "404 Error"
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Connection reuse"
 msgstr "Riutilizzo della connessione"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:229
 msgid "Country"
 msgstr "Nazione"
 
@@ -137,6 +137,12 @@ msgstr "Chiave privata HTTPS (formato DER o PEM)"
 msgid "HTTPS listener (address:port)"
 msgstr "Listener HTTPS (indirizzo:porta)"
 
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+msgid "If empty, a random/unique value is used in cert generation"
+msgstr ""
+"Se vuoto, nel generare il certificato viene utilizzato un valore casuale/"
+"unico"
+
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:90
 msgid "Ignore private IPs on public interface"
 msgstr "Ignorare gli IP privati sull'interfaccia pubblica"
@@ -157,7 +163,7 @@ msgstr ""
 msgid "Length of key in bits"
 msgstr "Lunghezza della chiave in bit"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:227
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:223
 msgid "Location"
 msgstr "Posizione"
 
@@ -176,6 +182,10 @@ msgstr "Tempo massimo di attesa per l'esecuzione di Lua, CGI o ubus"
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:182
 msgid "Maximum wait time for network activity"
 msgstr "Tempo massimo di attesa per l'attività di rete"
+
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
+msgid "Organization"
+msgstr "Organizzazione"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:166
 msgid "Override path for ubus socket"
@@ -220,7 +230,7 @@ msgstr ""
 "Impostazioni che sono necessarie raramente o che influiscono sul servizio "
 "dell'interfaccia utente web"
 
-#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:224
+#: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:226
 msgid "State"
 msgstr "Stato"
 
@@ -252,7 +262,8 @@ msgstr "Prefisso del percorso virtuale per gli script Lua"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:163
 msgid "Virtual path prefix for ubus via JSON-RPC integration"
-msgstr "Prefisso del percorso virtuale per ubus tramite l'integrazione JSON-RPC"
+msgstr ""
+"Prefisso del percorso virtuale per ubus tramite l'integrazione JSON-RPC"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:142
 msgid "Will not use HTTP authentication if not present"

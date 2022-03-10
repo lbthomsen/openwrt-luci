@@ -2030,7 +2030,7 @@ table table td,
 	display: flex;
 }
 
-.td.cbi-section-actions > * > *,
+.td.cbi-section-actions > :not(.cbi-dropdown) > *,
 .td.cbi-section-actions > * > form > * {
 	flex: 1 1 4em;
 	margin: 0 1px;
@@ -2050,6 +2050,10 @@ table table td,
 .tr.cbi-section-table-titles {
 	background: var(--background-color-medium);
 }
+
+th[data-sortable-row] { cursor: pointer; }
+th[data-sort-direction="asc"]::after { content: "\a0\25b2"; }
+th[data-sort-direction="desc"]::after { content: "\a0\25bc"; }
 
 .cbi-value-description {
 	margin: .25em 0 0 1.25em;
