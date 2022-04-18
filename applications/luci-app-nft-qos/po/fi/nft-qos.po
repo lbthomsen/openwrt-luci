@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-18 19:32+0000\n"
-"Last-Translator: Demian Wright <wright.demian+weblate@gmail.com>\n"
+"PO-Revision-Date: 2022-03-13 23:17+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnft-qos/fi/>\n"
 "Language: fi\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:136
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:155
@@ -98,22 +98,22 @@ msgstr ""
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:163
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:244
 msgid "Hostname"
-msgstr "Nimi"
+msgstr "Laitenimi"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:134
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:153
 msgid "IP Address"
-msgstr ""
+msgstr "IP-osoite"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:135
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:168
 msgid "IP Address (v4 / v6)"
-msgstr ""
+msgstr "IP-osoite (v4 / v6)"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:137
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:170
 msgid "IP Address (v4 Only)"
-msgstr ""
+msgstr "IP-osoite (vain v4)"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:40
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:105
@@ -130,19 +130,19 @@ msgstr ""
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:177
 msgid "MAC (optional)"
-msgstr ""
+msgstr "MAC (valinnainen)"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:248
 msgid "MAC Address"
-msgstr ""
+msgstr "MAC-osoite"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:48
 msgid "MB"
-msgstr ""
+msgstr "Mt"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:29
 msgid "NFT-QoS Settings"
-msgstr ""
+msgstr "NFT-QoS-asetukset"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:116
 msgid "Network Interface for Traffic Shaping, e.g. br-lan, eth0.1, eth0, etc."
@@ -163,11 +163,11 @@ msgstr "Ei tietoja saatavilla"
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:137
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:156
 msgid "Packets Total"
-msgstr ""
+msgstr "Paketteja yhteensä"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:212
 msgid "Priority"
-msgstr ""
+msgstr "Prioriteetti"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:204
 msgid "Protocol"
@@ -198,7 +198,7 @@ msgstr ""
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:226
 msgid "Service"
-msgstr ""
+msgstr "Palvelu"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:125
 msgid "Static QoS-Download Rate"
